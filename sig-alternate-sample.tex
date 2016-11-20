@@ -1,6 +1,24 @@
 \documentclass{sig-alternate-05-2015}
 
+\usepackage{float}
+
 \begin{document}
+	
+% Copyright
+\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+
+% DOI
+\doi{10.475/123_4}
+
+% ISBN
+\isbn{123-4567-24-567/08/06}
 
 \title{Working title}
 
@@ -34,7 +52,7 @@
 
 \end{abstract}
 
-\section{experiment explanation}
+\section{Experiment Explanation}
 The experiment aimed to investigate the performance difference between TDD and the more common CFTA approach, with either step by step instructions (Sliced) or free text (Non-sliced). To investigate this the group performed an experiment using third semester Software Engineering bachelor students at SDU as test subjects.
 
 
@@ -57,33 +75,157 @@ At the beginning of the experiment the students received a code skeleton to work
 
 While performing the experiment the group participated in a supporting capacity, as well as observers and coordinators. While helping the students with the difficult parts of the experiment, the group gained more insights into the different tasks, and the students approaches to the tasks. These insights could influence the group's objectivity to the experiment process as well as their perception of the results.
 
-\section{Results}
-In this experiment, 65 answers were submitted, but two participants submitted two versions, of the same questionnaire and one participant did not fulfill one of the questionnaire. A total number of 62 valid data points were collected.
+\section{Descriptive Statistics}
+The dataset the experiment is based on, consists of 65 data points, from where 3 data points were rejected as they did not fulfill the requirements for the questionnaires, in other words they were either double or incomplete submission. Therefore, only 62 data points are represented in the following section.
 
+All the subjects had submitted a zip-file containing their solution based on the code skeleton provided for the experiment. The 3 states the submissions were categorized in, were evaluated as if it was a real exam submission.
+The states were divided as follows:
 
-As mentioned earlier, the participants were handed in two questionnaires, one before the task, and one after the task. The participants were asked to rate their programming abilities.
-
-Their programming abilities were divided into 4 categories; none, novice, intermediate and expert. All abilities are measured per the number of years the participants have received lessons in programming. It is expected that each student has at least 1,5 years of programming experience, which is the measure used in the experiment.
 \begin{itemize}
-	\item None - those with no programming abilities
-	\item Novice - those with some, but small programming abilities (below average)
-	\item Intermediate - those with the expected abilities per the level of experience
-	\item Expert - those with good programming abilities (above average)
+	\item 23 - failed attempts, where the solution had no chance to fulfill the requirements.
+	\item 16 - critical state attempts, where the probability for the submission is high, but the fulfillment of the requirements is questionable.
+	\item 23 - passed attempts, where the solutions were fulfilling the requirements.
 \end{itemize}
 
-Of the 62 valid data points, 11 overestimated their programming abilities, as the participants failed, but rated their abilities as intermediate or higher. Seven participants were in a critical state with an intermediate or higher rated programming abilities. This must also be considered as over estimation of abilities.
-12 participants were failed and rated novice, whereas nine were in a critical state. 19 passed and were rated intermediate or higher. This must as those who rated their abilities, to match the outcome.
-Four was rated novice but passed. This must be considered those who underestimated their programming abilities.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img01}
+	\caption{Distribution of student's performance}
+\end{figure}
 
-The result of this experiment, was 62 submission of code, made in C{\#}, 124 answered questionnaires, which will be used to conclude and visualize, the difference between
+The diagram above represents the distribution of student's performance in the experiment, where the evaluation of their submitted code were divided into the three states.\\
 
-In the pre-questionnaire, the participants were asked about their background knowledge. \\
+As the distribution of the tasks were random, and each student got exactly one task. The number of students receiving the individual tasks were distributed as follows:
 
-\textbf{Currently working in industry:}\\
-Of all 62 valid submissions, 6 participants were already working or have been working in the industry. Of these 6 participants, 4 passed, 1 was in a critical state, and 1 failed the test.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img02}
+	\caption{Task distributions}
+\end{figure}
+
+38 students were to do the experiment with the test-last approach, where 24 students had to do the test-first approach. Further it is an exceptionally case that both the sliced and non-sliced tasks were equally distributed with 31 of each.
+
+After the assessment of the student submitted code, it is possible to look at the answers of the questionnaires. Shown in the following diagram is the student's perception of their own programming experience in these fields; General programming, C{\#}, Visual Studio, Unit testing, NUnit testing framework and Test-driven development (TDD).
+The students were rating their experience on the scale: None, Novice, Intermediate and Expert.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img03}
+	\caption{Student's own experience rating}
+\end{figure}
+
+It is important to see how the subject's self perception of their experience in TTD also seems to be based on which task the subject were handed.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img04}
+	\caption{TDD experience in tasks}
+\end{figure}
+
+When looking at the above diagram, there are more people with none TDD-experience in the test-last approach, which also is an exceptionally case.
+
+The experiment aimed to investigate the performance difference between Test-Driven Development (TDD) and the more common Code First Test After (CFTA) approach, with either step by step instructions (Sliced) or free text (Non-sliced).\\
+
+As the experiment aimed to investigate the performance based on the four tasks distributed among the students, the following diagram shows the code states divided by the tasks.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img05}
+	\caption{Student's task performance}
+\end{figure}
+
+As it is stated in the diagram, there are a tendency for the students' submissions to pass with sliced tasks.
+
+\section{Findings}
+
+The following diagrams shows the distributions between the students self-rating of programming experience level (None, Novice, Intermediate, Expert), and their correlating submission state (Passed, Critical, Failed), divided into each of the tasks respectively.
+It is important to notice that there were no students who have rated their programming experience  as "None" which means that we could have excluded this in the diagrams below. These are however included in the diagrams as it was an option in the pre-questionnaire, and therefore if excluded, would give a skewed view of the students programming experience levels. This does also apply for the "Expert" ratings which will be described below.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img06}
+	\caption{SLTL percentage distributions with relative task numbers}
+\end{figure}
+
+Here it is seen that 100\% of all students who rated their programming experience to be "Expert" has submitted a solution that fulfilled the requirements satisfying, where it was only 70\% and 20\% in respectively "Intermediate" and "Novice".
+It is important to notice that there were only one student who rated him- or herself as an "Expert" in programming experience, which means that he could have been excluded from the statistical analysis of this task, as the "Expert" percentage are misleading the reader. The rest of the percentages are for the critical submissions 10\% and 30\%, and for the failed submissions 20\% and 50\% respectively for the "Intermediate" and the "Novice" students.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img07}
+	\caption{SLTF percentage distributions with relative task numbers}
+\end{figure}
+
+It is seen that only 50\% of the "Intermediate" students submitted solutions which fulfilled the requirements satisfying, where there are none "Novice" students who did. On the other hand it is seen that it is respectively 12.5\% and 50\% in the "Intermediate" and "Novice" who were in the Critical state. The last percentages is 37.5\% and 50\% for respectively the "Intermediate" and the "Novice" students.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img08}
+	\caption{NSTL percentage distributions with relative task numbers}
+\end{figure}
+
+Above is the distribution of the students' experience and states of the NSTL tasks. Here it is also seen that it is only the students who have rated themselves as "Intermediate" experienced in programming, who submitted solutions that fulfilled the requirements with 62.5\%. This means that the "Novice" students had a distribution, with 44.5\% critical and 55.5\% failed submissions. Whereas the "Intermediate" students had 25\% critical and 12.5\% failed solution submissions.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img09}
+	\caption{NSTF percentage distributions with relative task numbers}
+\end{figure}
+
+Above is the distribution of the student's experience and states of the NSTF tasks. Here it is seen that both the "Intermediate" and the "Novice" students have submitted solutions that fulfilled the requirements, with a distribution of 20\% and 50\% respectively. Further the critical is distributed 30\% and 25\% where the failed is distributed 50\% and 25\% respectively for the "Intermediate" and the "Novice" students.
+
+The following diagram is a visualization of the total normalized data divided into the four different tasks. These data is calculated based on the weights: Passed=1, critical=0.5, failed=0.01.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img10}
+	\caption{Total normalized data distributed in tasks}
+\end{figure}
+
+It is seen that the students who had the sliced tasks performed better than the students who had the non-sliced tasks.
+
+The following diagrams shows "Novice" and "Intermediate" normalized data respectively, in accordance to the total normalized data.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img11}
+	\caption{Novice normalized data distributed in tasks in accordance to total normalized data}
+\end{figure}
+
+The above diagram shows that the "Novice" normalized data is lower than the total in all tasks but in the NSTL task. This data suggest that people who rate their programming experience as "Novice" is more predisposed to doing well when given the NSTL task, than when given one of the other tasks.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img12}
+	\caption{Intermediate normalized data ditsributed in tasks in accordance to total normalized data}
+\end{figure}
+
+The above diagram shows that the "Intermediate" normalized data is higher than the total in all tasks but in the NSTL. Which suggest that people who rates their programming experience at "Intermediate" is more predisposed to do worse when given the NSTL tasks in comparison if given one of the other tasks.
+
+\section{Threats to validity}
+
+The threats to the Internal validity of this experiment are mostly related to the selection process. The experiment was conducted while the students were performing a test, which would indicate that they were highly motivated to perform well.\\
+
+Further External threats to the validity were amongst others the \textit{Interaction of setting and treatment}, as the test subjects were given small simple tasks to complete, which does not represent a real world setting the results from an experiment in the field might vary. \textit{Interaction of history and treatment} is an important factor as the subjects had received lectures in all the topics tested in the experiment a few weeks up to the experiment. The participants were not representative of the target group (Software Developers) which also had an effect on the results, as they were unable to perform at the same level as the level as the target group.\\
+
+One of the major Social threats were the subjects inability to work alone, as some talked together during the experiment, which was not intended. The group did not consider \textit{Hypothesis guessing} a threat for the coding part of the experiment, but had to reevaluate it after the end of the experiment, as the subjects did not have more than 5  weeks of experience with TDD from received lectures. This might have impacted the subjects answers more or less in favor of TDD in the pre and post questionnaires. Another threat to the Social validity comes from the human discomfort from being evaluated, which can have influenced the results.\\
+
+The principal Conclusion validity is affected by the \textit{heterogeneity of the subjects} was rather large, as the test subjects was still only in the start of their university education, so their previously programming ability still played a major role in their programming proficiency which is also concerning the External validity. The conclusion validity is generally strong because of the high \textit{Statistical Power} in having a large group of participants, but we do not claim that the results can be generalized for the entire software developer population. 
+
+\section{Discussion}
+
+When the group have conducted the experiment, it was clear that there were some aspects that could have been improved, or done differently. First of all the group had different roles during the experiment, as they both acted as supporters and observers for the experiment. The supporting role was expressed during the experiment, when the students had any questions regarding the experiment in general and when more specific problems appeared, when eg. their IDE did not work properly. Whereas the observation-role were at any other point, to keep track of how the students performed the experiment. These roles could have been divided so some members of the group only acted like supporters and others as observators, which could have giving the group a different point of view as well as both having the subjective and objective view on the experiment process.\\
+
+The subjective view gave the group the knowledge that it seemed like the students did not actually read the experiment task properly, where the objective view gave the group knowledge that the students did talk together even though they specifically had been told not to.
+
+The coding submissions were a direct result of the students programming level in general and their TTD experience was not as high as the group expected, based on their answers in the pre- and post questionnaires. Further the different tasks gives an idea that the sliced tasks were easier for the students to do than the non-sliced tasks, as the passed-level in these are lower than the critical and failure-levels.
 
 \section{Conclusions}
 
 \section{Acknowledgments}
+
+Thanks to Marco Kuhrmann
+
+3'th semester bachelor Software Engineering students of SDU
 
 \end{document}

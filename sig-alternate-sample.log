@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.19)  20 NOV 2016 05:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.19)  20 NOV 2016 17:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -220,35 +220,43 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count111
+\float@exts=\toks38
+\float@box=\box30
+\@float@everytoks=\toks39
+\@floatcapt=\box31
+)
 (./sig-alternate-sample.aux)
 \openout1 = `sig-alternate-sample.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count111
+\scratchcounter=\count112
 \scratchdimen=\dimen123
-\scratchbox=\box30
-\nofMPsegments=\count112
-\nofMParguments=\count113
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count114
+\scratchbox=\box32
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count115
 \MPscratchDim=\dimen124
-\MPnumerator=\count115
-\makeMPintoPDFobject=\count116
-\everyMPtoPDFconversion=\toks39
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
+\everyMPtoPDFconversion=\toks41
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -293,63 +301,225 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 47.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 47.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 29.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 47.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 29.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 47.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-) [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+)
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 47.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+
+<img01.png, id=1, 284.56313pt x 199.49532pt>
+File: img01.png Graphic file (type png)
+ <use img01.png>
+Package pdftex.def Info: img01.png used on input line 92.
+(pdftex.def)             Requested size: 252.0pt x 176.67357pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 92--93
+ [][] 
+ []
+
+[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Overfull \hbox (1.69731pt too wide) in paragraph at lines 80--81
-[]\T1/aer/m/n/9 In the pre-questionnaire, the par-tic-i-pants were asked about
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-[2
+<img02.png, id=16, 284.56313pt x 199.49532pt>
+File: img02.png Graphic file (type png)
+ <use img02.png>
+Package pdftex.def Info: img02.png used on input line 102.
+(pdftex.def)             Requested size: 252.0pt x 176.67357pt.
 
-] (./sig-alternate-sample.aux) ) 
+Overfull \hbox (12.0pt too wide) in paragraph at lines 102--103
+ [][] 
+ []
+
+<img03.png, id=17, 398.23781pt x 284.56313pt>
+File: img03.png Graphic file (type png)
+ <use img03.png>
+Package pdftex.def Info: img03.png used on input line 113.
+(pdftex.def)             Requested size: 252.0pt x 180.06596pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 113--114
+ [][] 
+ []
+
+
+Underfull \vbox (badness 5203) has occurred while \output is active []
+
+
+<img04.png, id=18, 284.56313pt x 199.49532pt>
+File: img04.png Graphic file (type png)
+ <use img04.png>
+Package pdftex.def Info: img04.png used on input line 121.
+(pdftex.def)             Requested size: 252.0pt x 176.67357pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 121--122
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+<img05.png, id=19, 284.56313pt x 199.49532pt>
+File: img05.png Graphic file (type png)
+ <use img05.png>
+Package pdftex.def Info: img05.png used on input line 133.
+(pdftex.def)             Requested size: 252.0pt x 176.67357pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 133--134
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./img01.png> <./img02.png> <./img03.png> <./img04.png>]
+Overfull \hbox (9.71796pt too wide) in paragraph at lines 141--143
+\T1/aer/m/n/9 the stu-dents self-rating of pro-gram-ming ex-pe-ri-ence level (N
+one,
+ []
+
+<img06.png, id=24, 284.56313pt x 198.7425pt>
+File: img06.png Graphic file (type png)
+ <use img06.png>
+Package pdftex.def Info: img06.png used on input line 146.
+(pdftex.def)             Requested size: 252.0pt x 176.00688pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 146--147
+ [][] 
+ []
+
+<img07.png, id=25, 284.56313pt x 198.7425pt>
+File: img07.png Graphic file (type png)
+ <use img07.png>
+Package pdftex.def Info: img07.png used on input line 155.
+(pdftex.def)             Requested size: 252.0pt x 176.00688pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 155--156
+ [][] 
+ []
+
+<img08.png, id=26, 284.56313pt x 198.7425pt>
+File: img08.png Graphic file (type png)
+ <use img08.png>
+Package pdftex.def Info: img08.png used on input line 163.
+(pdftex.def)             Requested size: 252.0pt x 176.00688pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 163--164
+ [][] 
+ []
+
+[3 <./img05.png> <./img06.png> <./img07.png> <./img08.png>]
+<img09.png, id=30, 284.56313pt x 199.49532pt>
+File: img09.png Graphic file (type png)
+ <use img09.png>
+Package pdftex.def Info: img09.png used on input line 171.
+(pdftex.def)             Requested size: 252.0pt x 176.67357pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 171--172
+ [][] 
+ []
+
+<img10.png, id=31, 283.81032pt x 199.49532pt>
+File: img10.png Graphic file (type png)
+ <use img10.png>
+Package pdftex.def Info: img10.png used on input line 181.
+(pdftex.def)             Requested size: 252.0pt x 177.14235pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 181--182
+ [][] 
+ []
+
+<img11.png, id=32, 285.31593pt x 199.49532pt>
+File: img11.png Graphic file (type png)
+ <use img11.png>
+Package pdftex.def Info: img11.png used on input line 191.
+(pdftex.def)             Requested size: 252.0pt x 176.20174pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 191--192
+ [][] 
+ []
+
+<img12.png, id=33, 285.31593pt x 199.49532pt>
+File: img12.png Graphic file (type png)
+ <use img12.png>
+Package pdftex.def Info: img12.png used on input line 199.
+(pdftex.def)             Requested size: 252.0pt x 176.20174pt.
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 199--200
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+[4 <./img09.png> <./img10.png> <./img11.png> <./img12.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
+
+ []
+
+[5] (./sig-alternate-sample.aux) ) 
 Here is how much of TeX's memory you used:
- 3164 strings out of 493014
- 40950 string characters out of 6133350
- 115741 words of memory out of 5000000
- 6611 multiletter control sequences out of 15000+600000
+ 3306 strings out of 493014
+ 42868 string characters out of 6133350
+ 117118 words of memory out of 5000000
+ 6733 multiletter control sequences out of 15000+600000
  53836 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,35p,995b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/d
-vips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+ 41i,10n,35p,995b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc
+/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9
 .pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/loc
 al/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on sig-alternate-sample.pdf (2 pages, 97132 bytes).
+Output written on sig-alternate-sample.pdf (5 pages, 179377 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
