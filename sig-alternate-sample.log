@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.19)  20 NOV 2016 17:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.19)  20 NOV 2016 17:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -333,13 +333,8 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <7> not available
 File: img01.png Graphic file (type png)
  <use img01.png>
 Package pdftex.def Info: img01.png used on input line 92.
-(pdftex.def)             Requested size: 252.0pt x 176.67357pt.
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 92--93
- [][] 
- []
-
-[1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(pdftex.def)             Requested size: 201.59692pt x 141.33824pt.
+ [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
@@ -351,36 +346,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 File: img02.png Graphic file (type png)
  <use img02.png>
 Package pdftex.def Info: img02.png used on input line 102.
-(pdftex.def)             Requested size: 252.0pt x 176.67357pt.
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 102--103
- [][] 
- []
+(pdftex.def)             Requested size: 201.59692pt x 141.33824pt.
 
 <img03.png, id=17, 398.23781pt x 284.56313pt>
 File: img03.png Graphic file (type png)
  <use img03.png>
 Package pdftex.def Info: img03.png used on input line 113.
-(pdftex.def)             Requested size: 252.0pt x 180.06596pt.
+(pdftex.def)             Requested size: 201.59692pt x 144.05276pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 113--114
- [][] 
- []
-
-
-Underfull \vbox (badness 5203) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 <img04.png, id=18, 284.56313pt x 199.49532pt>
 File: img04.png Graphic file (type png)
  <use img04.png>
 Package pdftex.def Info: img04.png used on input line 121.
-(pdftex.def)             Requested size: 252.0pt x 176.67357pt.
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 121--122
- [][] 
- []
-
+(pdftex.def)             Requested size: 201.59692pt x 141.33824pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
@@ -390,12 +371,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--128
 File: img05.png Graphic file (type png)
  <use img05.png>
 Package pdftex.def Info: img05.png used on input line 133.
-(pdftex.def)             Requested size: 252.0pt x 176.67357pt.
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 133--134
- [][] 
- []
-
+(pdftex.def)             Requested size: 201.59692pt x 141.33824pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -409,84 +385,60 @@ one,
 File: img06.png Graphic file (type png)
  <use img06.png>
 Package pdftex.def Info: img06.png used on input line 146.
-(pdftex.def)             Requested size: 252.0pt x 176.00688pt.
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 146--147
- [][] 
- []
+(pdftex.def)             Requested size: 201.59692pt x 140.8049pt.
 
 <img07.png, id=25, 284.56313pt x 198.7425pt>
 File: img07.png Graphic file (type png)
  <use img07.png>
 Package pdftex.def Info: img07.png used on input line 155.
-(pdftex.def)             Requested size: 252.0pt x 176.00688pt.
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 155--156
- [][] 
- []
+(pdftex.def)             Requested size: 201.59692pt x 140.8049pt.
 
 <img08.png, id=26, 284.56313pt x 198.7425pt>
 File: img08.png Graphic file (type png)
  <use img08.png>
 Package pdftex.def Info: img08.png used on input line 163.
-(pdftex.def)             Requested size: 252.0pt x 176.00688pt.
+(pdftex.def)             Requested size: 201.59692pt x 140.8049pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 163--164
- [][] 
- []
-
-[3 <./img05.png> <./img06.png> <./img07.png> <./img08.png>]
-<img09.png, id=30, 284.56313pt x 199.49532pt>
+<img09.png, id=27, 284.56313pt x 199.49532pt>
 File: img09.png Graphic file (type png)
  <use img09.png>
 Package pdftex.def Info: img09.png used on input line 171.
-(pdftex.def)             Requested size: 252.0pt x 176.67357pt.
+(pdftex.def)             Requested size: 201.59692pt x 141.33824pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 171--172
- [][] 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [3 <./img05.png> <./img06.png> <./img07.png> <./img08.png>]
 <img10.png, id=31, 283.81032pt x 199.49532pt>
 File: img10.png Graphic file (type png)
  <use img10.png>
 Package pdftex.def Info: img10.png used on input line 181.
-(pdftex.def)             Requested size: 252.0pt x 177.14235pt.
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 181--182
- [][] 
- []
+(pdftex.def)             Requested size: 201.59692pt x 141.70961pt.
 
 <img11.png, id=32, 285.31593pt x 199.49532pt>
 File: img11.png Graphic file (type png)
  <use img11.png>
 Package pdftex.def Info: img11.png used on input line 191.
-(pdftex.def)             Requested size: 252.0pt x 176.20174pt.
+(pdftex.def)             Requested size: 201.59692pt x 140.95773pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 191--192
- [][] 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 <img12.png, id=33, 285.31593pt x 199.49532pt>
 File: img12.png Graphic file (type png)
  <use img12.png>
 Package pdftex.def Info: img12.png used on input line 199.
-(pdftex.def)             Requested size: 252.0pt x 176.20174pt.
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 199--200
- [][] 
- []
-
+(pdftex.def)             Requested size: 201.59692pt x 140.95773pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
-[4 <./img09.png> <./img10.png> <./img11.png> <./img12.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
-
+[4 <./img09.png> <./img10.png> <./img11.png> <./img12.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
@@ -516,7 +468,7 @@ y9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9
 usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/loc
 al/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on sig-alternate-sample.pdf (5 pages, 179377 bytes).
+Output written on sig-alternate-sample.pdf (5 pages, 179412 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
