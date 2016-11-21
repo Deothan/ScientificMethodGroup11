@@ -20,7 +20,7 @@
 % ISBN
 \isbn{123-4567-24-567/08/06}
 
-\title{Working title}
+\title{Experiment on Performance Difference between Test Driven Development and Code First Test After}
 
 \numberofauthors{3}
 \author{
@@ -46,7 +46,7 @@
 
 \maketitle
 \begin{abstract}
-\textit{Background:} Test Driven Development (TDD) is considered a good approach concerning productivity compared to the more common Code First Test After (CFTA) approach, and it works by implementing the tests first, and then by only writing enough logic to pass the test. \textit{Goal:} We aim to investigate if there is a performance gain in using Test-Driven Development (TDD) over Code First Test After (CFTA). \textit{Method:} We performed an experiment using 65 test subjects, who received one of four coding tasks, the tasks had the same end result, but the tasks were described and had to be solved in different ways with either step by step instructions (Sliced) or free text (Non-sliced) requirement descriptions. Further the subjects had to answer one questionnaire before and one after the coding task. \textit{Result:} The experiment showed that with this test group the approach was less important than how detailed the task was described.
+\textit{Background:} Test Driven Development (TDD) is considered a good approach concerning productivity compared to the more common Code First Test After (CFTA) approach, and it works by implementing the tests first, when the tests are done the developer implements just enough logic to pass the test. \textit{Goal:} We aim to investigate if there is a performance gain in using TDD over CFTA. \textit{Method:} We performed an experiment using 65 test subjects, who received one of four coding tasks, the tasks had the same end result, but the tasks were described and had to be solved using different approaches with either step by step instructions (Sliced) or free text (Non-sliced) requirement descriptions. Further the subjects had to answer a questionnaire before and after the coding task. \textit{Result:} The experiment showed that with this test group the approach was less important than how detailed the task was described.
 
 \textit{Conclusion:} From this experiment we cannot make any generalized conclusion as the test group is not a representative of the target group, but there seem to be no real difference between TDD and CFTA.
 
@@ -220,7 +220,16 @@ The subjective view gave the group the knowledge that it seemed like the student
 
 The coding submissions were a direct result of the students programming level in general and their TTD experience was not as high as the group expected, based on their answers in the pre- and post questionnaires. Further the different tasks gives an idea that the sliced tasks were easier for the students to do than the non-sliced tasks, as the passed-level in these are lower than the critical and failure-levels.
 
-\section{Conclusions}
+\section{Conclusion And Future Work}
+In this study we performed an experiment to investigate if there was an increase in productivity when the using TDD instead of CFTA. The test subjects were not representative of the target group of software developers so these findings only reflect how TDD and CFTA compare when used by students. 
+
+But the experiment indicates that for students considering themselves as Novices making the tests first yielded worse results then Test Last. The students considering themselves as intermediate the Test first seemed to yield the best results. But these results has to be tested further to make any generalized conclusion as there is no clear trend in the results.
+
+In the future we would like to perform a similar test on a group which has a closer relation to the actual target group. We would also investigate if it would be possible to use a metric to determine a subject's programming proficiency objectively instead of using the user's opinion. This will hopefully lead to a more general conclusion regarding the performance differences regarding TDD and CFTA.
+
+\section{References}
+
+
 
 \section{Acknowledgments}
 
