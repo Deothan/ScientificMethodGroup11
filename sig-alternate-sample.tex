@@ -43,7 +43,7 @@
 	Henrik Bolding Frank\
 	\affaddr{University of Southern Denmark}\\
 	\affaddr{Odense, Denmark}\\
-\email{hefra13@student.sdu.dk}
+	\email{hefra13@student.sdu.dk}
 }
 
 \maketitle
@@ -54,8 +54,22 @@
 
 \end{abstract}
 
-\section{Experiment Explanation}
+\section{Keywords}
+Keywords in bold...
+
+\section{Introduction}
+Intro intro intro
+
+Something about the test-last and test-first approaches?
+
+\section{Related work}
+Related work...
+TDD and CTFA
+External sources
+
+\section{Research method}
 The experiment aimed to investigate the performance difference between TDD and the more common CFTA approach, with either step by step instructions (Sliced) or free text (Non-sliced). To investigate this the group performed an experiment using third semester Software Engineering bachelor students at SDU as test subjects.
+The students were to develop an application that could calculate a bow\-ling score game, without a graphical user interface. Further the students had to develop a software solution and provide a test environment, where the most important thing were to submit a solution that compiles.
 
 
 Before and after the experiment the students were handed a questionnaire; the first with questions regarding their perception of their own skill level, and the latter with questions about how well they thought they had performed during the experiment.
@@ -71,11 +85,18 @@ The experiment was split into 4 different tasks:
 
 These tasks were randomly distributed among the students with no knowledge to the group of which students got which specific task.
 
+At the beginning of the experiment the students received a code skeleton to work from, to ensure that the solutions would have a similar structure, and therefore would be easier to compare. The submitted solutions was evaluated using an ordinal scale, from where it were decided whether the student were in one of the following three states; failed, critical and passed.
 
-At the beginning of the experiment the students received a code skeleton to work from, to ensure that the assignments would have a similar structure, and therefore it would be easier to compare the results. The code completeness and correctness was then evaluated using an ordinal scale, from where it were decided whether the student were in one of the following three states; failed, critical and passed. The code and questionnaires were then analysed to see if there was a correlation between testing before or testing after writing the code, and the task description's granularity.
+The states were described as follows:
+\begin{itemize}
+	\item Failed state - Solutions that has no chance to fulfill the requirements
+	\item Critical state - Solutions that has a high probability to run, but fulfillment of requirements is questionable
+	\item Passed state - Solutions fulfilling the requirements
+\end{itemize}
 
+Afterwards the solutions' states and questionnaires were analysed to see if there was a correlation between the test-first or the test-after approach, and the task description's granularity.
 
-While performing the experiment the group participated in a supporting capacity, as well as observers and coordinators. While helping the students with the difficult parts of the experiment, the group gained more insights into the different tasks, and the students approaches to the tasks. These insights could influence the group's objectivity to the experiment process as well as their perception of the results.
+While performing the experiment the group participated in a supporting capacity, as well as observers and coordinators. While helping the students with the difficult parts of the experiment, the group gained more insights into the different tasks, and the students' approaches to the tasks. These insights could influence the group's objectivity to the experiment process as well as their perception of the results.
 
 \section{Descriptive Statistics}
 The dataset the experiment is based on, consists of 65 data points, from where 3 data points were rejected as they did not fulfill the requirements for the questionnaires, in other words they were either double or incomplete submission. Therefore, only 62 data points are represented in the following section.
