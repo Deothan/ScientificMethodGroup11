@@ -2,6 +2,9 @@
 
 \usepackage{float}
 
+% Makes a shortcut for the image folder
+\graphicspath{ {./images/} }
+
 \begin{document}
 
 
@@ -107,8 +110,8 @@ The states are described as follows:
 
 Afterwards the solutions' states and questionnaires were analysed to see if there was a correlation between the test-first or the test-after approach, and the task description's granularity.
 
-\section{Descriptive Statistics}
-The dataset the experiment is based on, consists of 65 data points, from where 3 data points were rejected as they did not fulfill the requirements for the questionnaires, in other words they were either double or incomplete submission. Therefore, only 62 data points are represented in the following section.
+\section{Results}
+The dataset the experiment is based on, consists of 65 data points, from where 3 data points were rejected as they did not fulfill the requirements of the questionnaires, in other words they were either double or incomplete submission. Therefore, only 62 data points are represented in the following section.
 
 All the subjects had submitted a zip-file containing their solution based on the code skeleton provided for the experiment. The 3 states the submissions were categorized in, were evaluated as if it was a real exam submission.
 The states were divided as follows:
@@ -123,60 +126,64 @@ The states were divided as follows:
 	\centering
 	\includegraphics[width=0.4\textwidth]{img01}
 	\caption{Distribution of student's performance}
+	\label{fig:Distribution of student's performancel}
 \end{figure}
+% Her er et eksempel på hvordan man laver en ref til en figur. Jeg sætter et label som er en markør og bruger den til at link med, på den måde opdatere tallet hvis der kommer end ny figur ind.
+Figure~\ref{fig:Distribution of student's performancel} represents the distribution of student's performance in the experiment, where the evaluation of their submitted code were divided into the three states.\\
 
-Figure 1 represents the distribution of student's performance in the experiment, where the evaluation of their submitted code were divided into the three states.\\
-
-As the distribution of the tasks were random, and each student got exactly one task. The number of students receiving the individual tasks were distributed as illustrated in figure 2:
+As the distribution of the tasks were random, and each student got exactly one task. The number of students receiving the individual tasks were distributed as illustrated in figure~\ref{fig:Task distributions}:
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img02}
 	\caption{Task distributions}
+	\label{fig:Task distributions}
 \end{figure}
 
-38 students were to do the experiment with the test-last approach, where 24 students had to do the test-first approach. Further it is an exceptionally case that both the sliced and non-sliced tasks were equally distributed with 31 of each.
+38 students used the test-last approach, and 24 students used the test-first approach. Further it is an exceptional case where both the sliced and non-sliced tasks were equally distributed with 31 of each.
 
-After the assessment of the student submitted code, it is possible to look at the answers of the questionnaires. Shown in figure 3 the student's perception of their own programming experience in these fields; General programming, C{\#}, Visual Studio, Unit testing, NUnit testing framework and Test-driven development (TDD).
+After the assessment of the code submissions, it is possible to look at the answers of the questionnaires. Shown in figure~\ref{fig:Student's own experience rating} the student's perception of their own programming experience in these fields; General programming, C{\#}, Visual Studio, Unit testing, NUnit testing framework and Test-driven development (TDD).
 The students were rating their experience on the scale: None, Novice, Intermediate and Expert.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img03}
 	\caption{Student's own experience rating}
+	\label{fig:Student's own experience rating}
 \end{figure}
 
-It is important to see how the subject's self perception of their experience in TTD also seems to be based on which task the subject were handed.
+It is interesting to see that the students who ended up with TF tasks rated themselves lower in their perception of their experience in TTD.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img04}
 	\caption{TDD experience in tasks}
+	\label{fig:TDD experience in tasks}
 \end{figure}
 
-When looking at figure 3 and 4, there are more people with none TDD-experience in the test-last approach, which also is an exceptionally case.
+When looking at figure~\ref{fig:Student's own experience rating} and ~\ref{fig:TDD experience in tasks}, there are more people with none TDD-experience in the test-last approach, which also is an exceptional case.
 
 The experiment aimed to investigate the performance difference between Test-Driven Development (TDD) and the more common Code First Test After (CFTA) approach, with either step by step instructions (Sliced) or free text (Non-sliced).\\
 
-As the experiment aimed to investigate the performance based on the four tasks distributed among the students, figure 5 shows the code states divided by the tasks.
+As the experiment aimed to investigate the performance based on the four tasks distributed amongst the students, figure~\ref{fig:Student's task performance} shows the code states divided by the tasks.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img05}
 	\caption{Student's task performance}
+	\label{fig:Student's task performance}
 \end{figure}
 
-As it is stated in figure 5, there are a tendency for the students' submissions to pass with sliced tasks.
+As it is stated in figure~\ref{fig:Student's task performance}, there are a tendency for the students' submissions to pass with sliced tasks.
 
-\section{Findings}
-
-Figure 6 shows the distributions between the students self-rating of programming experience level (None, Novice, Intermediate, Expert), and their correlating submission state (Passed, Critical, Failed), divided into each of the tasks respectively.
-It is important to notice that there were no students who have rated their programming experience  as "None" which means that the group could have excluded this in figure 6-9. These are however included in the diagrams as it was an option in the pre-questionnaire, and therefore if excluded, would give a skewed view of the students programming experience levels. This does also apply for the "Expert" ratings which will be described below.
+Figure~\ref{fig:SLTL percentage distributions with relative task numbers} shows the distributions between the students self-rating of programming experience level (None, Novice, Intermediate, Expert), and their correlating submission state (Passed, Critical, Failed), divided into each of the tasks respectively.
+It is important to notice that there were no students who have rated their programming experience  as "None" which means that they could have excluded this in figure~\ref{fig:SLTL percentage distributions with relative task numbers}-\ref{fig:NSTF percentage distributions with relative task numbers}. These are however included in the diagrams as it was an option in the pre-questionnaire, and therefore if excluded, could give a skewed view of the students programming experience levels. This does also apply for the "Expert" ratings which is described show in figure~\ref{fig:SLTL percentage distributions with relative task numbers}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img06}
 	\caption{SLTL percentage distributions with relative task numbers}
+	\label{fig:SLTL percentage distributions with relative task numbers}
 \end{figure}
 
 Here it is seen that 100\% of all students who rated their programming experience to be "Expert" has submitted a solution that fulfilled the requirements satisfying, where it was only 70\% and 20\% in respectively "Intermediate" and "Novice".
@@ -186,53 +193,59 @@ It is important to notice that there were only one student who rated him- or her
 	\centering
 	\includegraphics[width=0.4\textwidth]{img07}
 	\caption{SLTF percentage distributions with relative task numbers}
+	\label{fig:SLTF percentage distributions with relative task numbers}
 \end{figure}
 
-In figure 7 it is seen that only 50\% of the "Intermediate" students submitted solutions which fulfilled the requirements satisfying, where there are none "Novice" students who did. On the other hand it is seen that it is respectively 12.5\% and 50\% in the "Intermediate" and "Novice" who were in the Critical state. The last percentages is 37.5\% and 50\% for respectively the "Intermediate" and the "Novice" students.
+In figure~\ref{fig:SLTF percentage distributions with relative task numbers} it is seen that only 50\% of the "Intermediate" students submitted solutions which fulfilled the requirements satisfying, where there are none "Novice" students who did. On the other hand it is seen that it is respectively 12.5\% and 50\% in the "Intermediate" and "Novice" who were in the Critical state. The last percentages are 37.5\% and 50\% for respectively the "Intermediate" and the "Novice" students are those who failed.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img08}
 	\caption{NSTL percentage distributions with relative task numbers}
+	\label{fig:NSTL percentage distributions with relative task numbers}
 \end{figure}
 
-Figure 8 shows the distribution of the students' experience and states of the NSTL tasks. Here it is also seen that it is only the students who have rated themselves as "Intermediate" experienced in programming, who submitted solutions that fulfilled the requirements with 62.5\%. This means that the "Novice" students had a distribution, with 44.5\% critical and 55.5\% failed submissions. Whereas the "Intermediate" students had 25\% critical and 12.5\% failed solution submissions.
+Figure~\ref{fig:NSTL percentage distributions with relative task numbers} shows the distribution of the students' experience and states of the NSTL tasks. Here it is also seen that it is only the students who have rated themselves as "Intermediate" experienced in programming, who submitted solutions that fulfilled the requirements with 62.5\%. This means that the "Novice" students had a distribution, with 44.5\% critical and 55.5\% failed submissions. Whereas the "Intermediate" students had 25\% critical and 12.5\% failed solution submissions.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img09}
 	\caption{NSTF percentage distributions with relative task numbers}
+	\label{fig:NSTF percentage distributions with relative task numbers}
 \end{figure}
 
-Figure 9 shows the distribution of the student's experience and states of the NSTF tasks. Here it is seen that both the "Intermediate" and the "Novice" students have submitted solutions that fulfilled the requirements, with a distribution of 20\% and 50\% respectively. Further the critical is distributed 30\% and 25\% where the failed is distributed 50\% and 25\% respectively for the "Intermediate" and the "Novice" students.
+Figure~\ref{fig:NSTF percentage distributions with relative task numbers} shows the distribution of the student's experience and states of the NSTF tasks. Here it is seen that both the "Intermediate" and the "Novice" students have submitted solutions that fulfilled the requirements, with a distribution of 20\% and 50\% respectively. Further the critical is distributed 30\% and 25\% where the failed is distributed 50\% and 25\% respectively for the "Intermediate" and the "Novice" students.
 
-Figure 10 is a visualization of the total normalized data divided into the four different tasks. These data is calculated based on the weights: Passed=1, critical=0.5, failed=0.01.
+Figure~\ref{fig:Total normalized data distributed in tasks} is a visualization of the total normalized data divided into the four different tasks. These data is calculated based on the weights: Passed=1, critical=0.5, failed=0.01.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img10}
 	\caption{Total normalized data distributed in tasks}
+	\label{fig:Total normalized data distributed in tasks}
 \end{figure}
 
 It is seen that the students who had the sliced tasks performed better than the students who had the non-sliced tasks.
 
-Figure 11 shows "Novice" and "Intermediate" normalized data respectively, in accordance to the total normalized data.
+Figure~\ref{fig:Novice normalized data distributed in tasks in accordance to total normalized data} shows "Novice" and "Intermediate" normalized data respectively, in accordance to the total normalized data.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img11}
 	\caption{Novice normalized data distributed in tasks in accordance to total normalized data}
+	\label{fig:Novice normalized data distributed in tasks in accordance to total normalized data}
 \end{figure}
 
-In figure 11 it is illustrated that the "Novice" normalized data is lower than the total in all tasks but in the NSTL task. This data suggest that people who rate their programming experience as "Novice" is more predisposed to doing well when given the NSTL task, than when given one of the other tasks.
+In figure~\ref{fig:Novice normalized data distributed in tasks in accordance to total normalized data} it is illustrated that the "Novice" normalized data is lower than the total in all tasks but in the NSTL task. This data suggest that people who rate their programming experience as "Novice" is more predisposed to doing well when given the NSTL task, than when given one of the other tasks.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img12}
 	\caption{Intermediate normalized data ditsributed in tasks in accordance to total normalized data}
+	\label{fig:Intermediate normalized data ditsributed in tasks in accordance to total normalized data}
 \end{figure}
 
-Figure 12 shows that the "Intermediate" normalized data is higher than the total in all tasks but in the NSTL. Which suggest that people who rates their programming experience at "Intermediate" is more predisposed to do worse when given the NSTL tasks in comparison if given one of the other tasks.
+Figure~\ref{fig:Intermediate normalized data ditsributed in tasks in accordance to total normalized data} shows that the "Intermediate" normalized data is higher than the total in all tasks but in the NSTL. Which suggest that people who rates their programming experience at "Intermediate" is more predisposed to do worse when given the NSTL tasks in comparison if given one of the other tasks.
 
 \section{Threats to validity}
 
@@ -246,16 +259,20 @@ The principal Conclusion validity is affected by the \textit{heterogeneity of th
 
 \section{Discussion}
 
-When the group have conducted the experiment, it was clear that there were some aspects that could have been improved, or done differently. First of all the group had different roles during the experiment, as they both acted as supporters and observers for the experiment. The supporting role was expressed during the experiment, when the students had any questions regarding the experiment in general and when more specific problems appeared, when eg. their IDE did not work properly. Whereas the observation-role were at any other point, to keep track of how the students performed the experiment. These roles could have been divided so some members of the group only acted like supporters and others as observators, which could have giving the group a different point of view as well as both having the subjective and objective view on the experiment process.\\
+In this section we compare TDD and CFTA according to our results. The result doesn’t give any clear answer to what is best, but the results indicate that for the students as novice developers it was easier to use the code first approach, which could be because they didn’t know how to solve the problem at first, but used trial and error to solve small parts of the assignment step by step to find a solution that seemed to cover the requirements. When the developer does not know how the code will be structured in the end it is difficult to write tests that will cover everything.\\
 
-The subjective view gave the group the knowledge that it seemed like the students did not actually read the experiment task properly, where the objective view gave the group knowledge that the students did talk together even though they specifically had been told not to.
+This has to be compared to the more experienced developers, who knew how they were going to solve the assignment from the requirements. Which allowed them to write the tests according to their initial solution and then use the tests to identify issues they might run into when implementing the logic later on.\\
 
-The coding submissions were a direct result of the students programming level in general and their TTD experience was not as high as the group expected, based on their answers in the pre- and post questionnaires. Further the different tasks gives an idea that the sliced tasks were easier for the students to do than the non-sliced tasks, as the passed-level in these are lower than the critical and failure-levels.
+But as all of the students are new to programming these are only assumptions, and we have to do more research to find a clear answer, as the results will most likely be different with a group of more experienced developers.\\
+
+For the next iteration of this experiment it is paramount that the students are more clearly instructed in what the assignment is, to ensure that they are more focused on performing the experiment in accordance to description, as the validity of the results become questionable when the students differ from the described pattern of the experiment. \\
+
+To ensure that there was no bias in the assignment of tasks the students received tasks randomly, this has the benefit that we as a group were unable to bias the results by handing out the assignments to the students in a way that would increase the probability of favourable result. The downside to this approach is that there was an unequal distribution of students across the different tasks, but with a sample group of this size it was not an issue.
 
 \section{Conclusion And Future Work}
 In this study the group performed an experiment to investigate if there was an increase in productivity when the using TDD instead of CFTA. The test subjects were not representative of the target group of software developers so these findings only reflect how TDD and CFTA compare when used by students. 
 
-But the experiment indicates that for students considering themselves as Novices making the tests first yielded worse results then Test Last. The students considering themselves as intermediate the Test first seemed to yield the best results. But these results has to be tested further to make any generalized conclusion as there is no clear trend in the results.
+But the experiment indicates that for students considering themselves as Novices making the tests first yielded worse results than Test Last. The students considering themselves as intermediate the Test first seemed to yield the best results. But these results has to be tested further to make any generalized conclusion as there is no clear trend in the results.
 
 In the future the group would like to perform a similar test on a group which has a closer relation to the actual target group. The group would also investigate if it would be possible to use a metric to determine a subject's programming proficiency objectively instead of using the user's opinion. This will hopefully lead to a more general conclusion regarding the performance differences regarding TDD and CFTA.
 
