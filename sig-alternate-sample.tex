@@ -59,7 +59,7 @@ From this experiment we cannot make any generalized conclusion as the test group
 
 
 \begin{keywords}
-TEST DRIVEN DEVELOPMENT, CODE FIRST TEST AFTER, PERFORMANCE, DEVELOPMENT APPROACH, SOFTWARE, ENGINEERING, EXPERIMENT
+Test Driven Development, Code First Test After, Performance, Development Approach, Software, Engineering, Experiment
 
 \end{keywords}
 
@@ -68,6 +68,7 @@ TEST DRIVEN DEVELOPMENT, CODE FIRST TEST AFTER, PERFORMANCE, DEVELOPMENT APPROAC
 In order to develop software faster, several approaches are available. The goal of this experiment, is to determine whether Test Driven Development, or Code First Test After approach has an increase in productivity, when developing software. In TDD the unit tests are written before the actual production code. When the test case has been described, just enough code to make the test case pass, is developed.
 In CFTA code is tested, as the production code is being developed.
 
+\subsection{Reading guide}
 First the research method will be described, in order to establish a base terminology to the reader. This section will also describe the requirements to the experiment as well.
 A conclusion will be made, by the result presented later in this article. Also threads to validity will be considered, when drawing this conclusion.
 
@@ -75,7 +76,7 @@ A conclusion will be made, by the result presented later in this article. Also t
 While TDD and CTFA is not newly developed approaches, proper studies in this topic has already been made. As a part of this experiment, a research kit has been developed. This kit has been developed by D. Fucci, B. Turhan and M. Oivo, which also have conducted an experiment with the same goal. These studies show positive signs of increase in productivity, when using TDD [1].
 
 \section{Research method}
-The experiment aimed to investigate the performance difference between TDD and the CFTA approach, with either step by step instructions (Sliced) or free text (Non-sliced). To investigate this the group performed an experiment using third semester Software Engineering bachelor students at SDU as test subjects.
+The experiment aimed to investigate the performance difference between TDD and the CFTA approach, with either step by step instructions (Sliced) or free text (Non-sliced). To investigate this we performed an experiment using third semester Software Engineering bachelor students at SDU as test subjects.
 
 Before and after the experiment was conducted, the students were handed a pre- and a postquestionnaire respectively.
 The prequestionnaire contained questions regarding the students perception of their own skill level, where the postquestionnaire contained questions about how well the students thought they had performed during the experiment.
@@ -93,18 +94,24 @@ The test-first approach tasks were where the students had to implement a test to
 The sliced tasks were where the requirements were described step-by-step, whereas the non-sliced tasks had requirement descriptions in one full textblock.
 
 
-The four tasks were randomly distributed among the students with no knowledge to the group of which students got which specific task. This were decided as the group had previous knowledge of the students strengths and weaknesses, and could therefore insinuate a biased distribution.
+The four tasks were randomly distributed among the students with no knowledge to us of which students got which specific task. This were decided as the group had previous knowledge of the students strengths and weaknesses, and could therefore insinuate a biased distribution.
 
 While performing the experiment the group participated in a supporting capacity, as well as observers and coordinators. While helping the students with the difficult parts of the experiment, the group gained more insights into the different tasks, and the students' approaches to the tasks. These insights could influence the group's objectivity to the experiment process as well as their perception of the results.
 
-At the beginning of the experiment the students received a code skeleton to work from, to ensure that the solutions would have a similar structure, and therefore would be easier to compare. The submitted solutions was evaluated using an ordinal scale, from where it were decided whether the student were in one of the following three states; failed, critical and passed.
+At the beginning of the experiment the students received a code skeleton to work from, to ensure that the solutions would have a similar structure, and therefore would be easier to compare. The submitted solutions was evaluated using an ordinal scale, from where it were decided whether the student were in one of the following three states; failed, critical and passed. These are described in table \ref{StatesTable}.
 
-The states are described as follows:
-\begin{itemize}
-	\item Failed state - Solutions that has no chance to fulfill the requirements
-	\item Critical state - Solutions that has a high probability to run, but fulfillment of requirements is questionable
-	\item Passed state - Solutions fulfilling the requirements
-\end{itemize}
+\begin{table}[]
+\centering
+\caption{States}
+\label{StatesTable}
+\begin{tabular}{lllll}
+\cline{1-2}
+\multicolumn{1}{|l|}{\textbf{States}}   & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\textbf{Description}\end{tabular}}\\ \cline{1-2}
+\multicolumn{1}{|l|}{Failed state}   & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Solutions that has no chance to run\\ in a centralized environment\end{tabular}}\\ \cline{1-2}
+\multicolumn{1}{|l|}{Critical state} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Solutions that has a high probability\\ to run\end{tabular}}\\ \cline{1-2}
+\multicolumn{1}{|l|}{Passed state}   & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Solutions (partically) fulfilling the\\ requirement\end{tabular}}\\ \cline{1-2}
+\end{tabular}
+\end{table}
 
 Afterwards the solutions' states and questionnaires were analysed to see if there was a correlation between the test-first or the test-after approach, and the task description's granularity.
 
@@ -245,15 +252,7 @@ In figure~\ref{fig:Novice normalized data distributed in tasks in accordance to 
 
 Figure~\ref{fig:Intermediate normalized data ditsributed in tasks in accordance to total normalized data} shows that the "Intermediate" normalized data is higher than the total in all tasks but in the NSTL. Which suggest that people who rates their programming experience at "Intermediate" is more predisposed to do worse when given the NSTL tasks in comparison if given one of the other tasks.
 
-\section{Threats to validity}
 
-The threats to the Internal validity of this experiment are mostly related to the selection process. The experiment was conducted while the students were performing a test, which would indicate that they were highly motivated to perform well.\\
-
-Further External threats to the validity were amongst others the \textit{Interaction of setting and treatment}, as the test subjects were given small simple tasks to complete, which does not represent a real world setting the results from an experiment in the field might vary. \textit{Interaction of history and treatment} is an important factor as the subjects had received lectures in all the topics tested in the experiment a few weeks up to the experiment. The participants were not representative of the target group (Software Developers) which also had an effect on the results, as they were unable to perform at the same level as the level as the target group.\\
-
-One of the major Social threats were the subjects inability to work alone, as some talked together during the experiment, which was not intended. The group did not consider \textit{Hypothesis guessing} a threat for the coding part of the experiment, but had to reevaluate it after the end of the experiment, as the subjects did not have more than 5  weeks of experience with TDD from received lectures. This might have impacted the subjects answers more or less in favor of TDD in the pre and post questionnaires. Another threat to the Social validity comes from the human discomfort from being evaluated, which can have influenced the results.\\
-
-The principal Conclusion validity is affected by the \textit{heterogeneity of the subjects} was rather large, as the test subjects was still only in the start of their university education, so their previously programming ability still played a major role in their programming proficiency which is also concerning the External validity. The conclusion validity is generally strong because of the high \textit{Statistical Power} in having a large group of participants, but the group do not claim that the results can be generalized for the entire software developer population. 
 
 \section{Discussion}
 
@@ -268,13 +267,23 @@ For the next iteration of this experiment it is paramount that the students are 
 To ensure that there was no bias in the assignment of tasks the students received tasks randomly, this has the benefit that we as a group were unable to bias the results by handing out the assignments to the students in a way that would increase the probability of favourable result. The downside to this approach is that there was an unequal distribution of students across the different tasks, but with a sample group of this size it was not an issue.\\
 
 
+\section{Threats to validity}
 
-\section{Conclusion And Future Work}
-In this study the group performed an experiment to investigate if there was an increase in productivity when the using TDD instead of CFTA. The test subjects were not representative of the target group of software developers so these findings only reflect how TDD and CFTA compare when used by students. 
+The threats to the Internal validity of this experiment are mostly related to the selection process. The experiment was conducted while the students were performing a test, which would indicate that they were highly motivated to perform well.\\
+
+Further External threats to the validity were amongst others the \textit{Interaction of setting and treatment}, as the test subjects were given small simple tasks to complete, which does not represent a real world setting the results from an experiment in the field might vary. \textit{Interaction of history and treatment} is an important factor as the subjects had received lectures in all the topics tested in the experiment a few weeks up to the experiment. The participants were not representative of the target group (Software Developers) which also had an effect on the results, as they were unable to perform at the same level as the level as the target group.\\
+
+One of the major Social threats were the subjects inability to work alone, as some talked together during the experiment, which was not intended. We did not consider \textit{Hypothesis guessing} a threat for the coding part of the experiment, but had to reevaluate it after the end of the experiment, as the subjects did not have more than 5  weeks of experience with TDD from received lectures. This might have impacted the subjects answers more or less in favor of TDD in the pre and post questionnaires. Another threat to the Social validity comes from the human discomfort from being evaluated, which can have influenced the results.\\
+
+The principal Conclusion validity is affected by the \textit{heterogeneity of the subjects} was rather large, as the test subjects was still only in the start of their university education, so their previously programming ability still played a major role in their programming proficiency which is also concerning the External validity. The conclusion validity is generally strong because of the high \textit{Statistical Power} in having a large group of participants, but we do not claim that the results can be generalized for the entire software developer population. 
+
+
+\section{Conclusion}
+In this study we performed an experiment to investigate if there was an increase in productivity when the using TDD instead of CFTA. The test subjects were not representative of the target group of software developers so these findings only reflect how TDD and CFTA compare when used by students. 
 
 But the experiment indicates that for students considering themselves as Novices making the tests first yielded worse results than Test Last. The students considering themselves as intermediate the Test first seemed to yield the best results. But these results has to be tested further to make any generalized conclusion as there is no clear trend in the results.
 
-In the future the group would like to perform a similar test on a group which has a closer relation to the actual target group. The group would also investigate if it would be possible to use a metric to determine a subject's programming proficiency objectively instead of using the user's opinion. This will hopefully lead to a more general conclusion regarding the performance differences regarding TDD and CFTA.
+In the future we would like to perform a similar test on a group which has a closer relation to the actual target group. We would also investigate if it would be possible to use a metric to determine a subject's programming proficiency objectively instead of using the user's opinion. This will hopefully lead to a more general conclusion regarding the performance differences regarding TDD and CFTA.
 
 \begin{thebibliography}{3}
 
@@ -299,9 +308,9 @@ In the future the group would like to perform a similar test on a group which ha
 
 \section{Acknowledgments}
 
-First of all, the group wants to thank Dr. Marco Kuhrmann for his participation and help in this experiment. Especially for providing the necessary communication with the former of the experiment kit, and the provided tools and data.\\
+First of all, we wants to thank Dr. Marco Kuhrmann for his participation and help in this experiment. Especially for providing the necessary communication with the former of the experiment kit, and the provided tools and data.\\
 
-The group also wants to thank Davide Fucci, Burak Turhan, Markku Oivo from University of Oulu for providing the experiment kit used in this experiment.\\
+We also wants to thank Davide Fucci, Burak Turhan, Markku Oivo from University of Oulu for providing the experiment kit used in this experiment.\\
 
 Thanks to all students of 3. semester Software Engineering 2016 of University of Southern Denmark for participating in this project.
 
