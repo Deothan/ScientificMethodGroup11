@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.2)  6 DEC 2016 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.21)  7 DEC 2016 12:03
 entering extended mode
 **./sig-alternate-sample.tex
 (sig-alternate-sample.tex
@@ -329,49 +329,53 @@ Overfull \hbox (8.5313pt too wide) in paragraph at lines 62--63
 \T1/aer/m/n/9 AF-TER, PER-FOR-MANCE, DE-VEL-OP-MENT AP-PROACH,
  []
 
-[1{C:/Users/MRR/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-
-]
-<./images/img01.png, id=13, 284.56313pt x 199.49532pt>
-File: ./images/img01.png Graphic file (type png)
-
-<use ./images/img01.png>
-Package pdftex.def Info: ./images/img01.png used on input line 125.
-(pdftex.def)             Requested size: 201.59692pt x 141.33824pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-<./images/img02.png, id=14, 284.56313pt x 199.49532pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+<./images/img01.png, id=12, 284.56313pt x 199.49532pt>
+File: ./images/img01.png Graphic file (type png)
+
+<use ./images/img01.png>
+Package pdftex.def Info: ./images/img01.png used on input line 132.
+(pdftex.def)             Requested size: 201.59692pt x 141.33824pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+<./images/img02.png, id=13, 284.56313pt x 199.49532pt>
 File: ./images/img02.png Graphic file (type png)
 
 <use ./images/img02.png>
-Package pdftex.def Info: ./images/img02.png used on input line 136.
+Package pdftex.def Info: ./images/img02.png used on input line 143.
 (pdftex.def)             Requested size: 201.59692pt x 141.33824pt.
-
-<./images/img03.png, id=15, 398.23781pt x 284.56313pt>
+ [2 <./images/img01.png> <./images/img02.png>]
+<./images/img03.png, id=19, 398.23781pt x 284.56313pt>
 File: ./images/img03.png Graphic file (type png)
 
 <use ./images/img03.png>
-Package pdftex.def Info: ./images/img03.png used on input line 148.
+Package pdftex.def Info: ./images/img03.png used on input line 155.
 (pdftex.def)             Requested size: 201.59692pt x 144.05276pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./images/img01.png> <./images/img02.png>]
 <./images/img04.png, id=20, 284.56313pt x 199.49532pt>
 File: ./images/img04.png Graphic file (type png)
 
 <use ./images/img04.png>
-Package pdftex.def Info: ./images/img04.png used on input line 157.
+Package pdftex.def Info: ./images/img04.png used on input line 164.
 (pdftex.def)             Requested size: 201.59692pt x 141.33824pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
@@ -379,7 +383,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
 File: ./images/img05.png Graphic file (type png)
 
 <use ./images/img05.png>
-Package pdftex.def Info: ./images/img05.png used on input line 170.
+Package pdftex.def Info: ./images/img05.png used on input line 177.
 (pdftex.def)             Requested size: 201.59692pt x 141.33824pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -388,13 +392,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <./images/img06.png, id=22, 284.56313pt x 198.7425pt>
 File: ./images/img06.png Graphic file (type png)
  <use ./images/img06.png>
-Package pdftex.def Info: ./images/img06.png used on input line 182.
+Package pdftex.def Info: ./images/img06.png used on input line 189.
 (pdftex.def)             Requested size: 201.59692pt x 140.8049pt.
 
 <./images/img07.png, id=23, 284.56313pt x 198.7425pt>
 File: ./images/img07.png Graphic file (type png)
  <use ./images/img07.png>
-Package pdftex.def Info: ./images/img07.png used on input line 192.
+Package pdftex.def Info: ./images/img07.png used on input line 199.
 (pdftex.def)             Requested size: 201.59692pt x 140.8049pt.
 
 Underfull \vbox (badness 4832) has occurred while \output is active []
@@ -404,14 +408,14 @@ g06.png>]
 <./images/img08.png, id=27, 284.56313pt x 198.7425pt>
 File: ./images/img08.png Graphic file (type png)
  <use ./images/img08.png>
-Package pdftex.def Info: ./images/img08.png used on input line 201.
+Package pdftex.def Info: ./images/img08.png used on input line 208.
 (pdftex.def)             Requested size: 201.59692pt x 140.8049pt.
 
 <./images/img09.png, id=28, 284.56313pt x 199.49532pt>
 File: ./images/img09.png Graphic file (type png)
 
 <use ./images/img09.png>
-Package pdftex.def Info: ./images/img09.png used on input line 210.
+Package pdftex.def Info: ./images/img09.png used on input line 217.
 (pdftex.def)             Requested size: 201.59692pt x 141.33824pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -421,14 +425,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: ./images/img10.png Graphic file (type png)
 
 <use ./images/img10.png>
-Package pdftex.def Info: ./images/img10.png used on input line 221.
+Package pdftex.def Info: ./images/img10.png used on input line 228.
 (pdftex.def)             Requested size: 201.59692pt x 141.70961pt.
 
 <./images/img11.png, id=30, 285.31593pt x 199.49532pt>
 File: ./images/img11.png Graphic file (type png)
 
 <use ./images/img11.png>
-Package pdftex.def Info: ./images/img11.png used on input line 232.
+Package pdftex.def Info: ./images/img11.png used on input line 239.
 (pdftex.def)             Requested size: 201.59692pt x 140.95773pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -439,60 +443,65 @@ g10.png>]
 File: ./images/img12.png Graphic file (type png)
 
 <use ./images/img12.png>
-Package pdftex.def Info: ./images/img12.png used on input line 241.
+Package pdftex.def Info: ./images/img12.png used on input line 248.
 (pdftex.def)             Requested size: 201.59692pt x 140.95773pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
 [5 <./images/img11.png> <./images/img12.png>]
-Overfull \hbox (3.61484pt too wide) in paragraph at lines 300--301
+Overfull \hbox (3.61484pt too wide) in paragraph at lines 309--310
 []\T1/aer/m/n/9 First of all, the group wants to thank Dr. Marco Kuhrmann
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
 
-Overfull \hbox (5.5951pt too wide) in paragraph at lines 302--303
+Overfull \hbox (5.5951pt too wide) in paragraph at lines 311--312
 []\T1/aer/m/n/9 The group also wants to thank Da-vide Fucci, Bu-rak Turhan,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
  []
 
@@ -501,7 +510,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--303
 ] (sig-alternate-sample.aux) ) 
 Here is how much of TeX's memory you used:
  3328 strings out of 493333
- 43246 string characters out of 3139200
+ 43246 string characters out of 3139179
  116997 words of memory out of 3000000
  6743 multiletter control sequences out of 15000+200000
  53836 words of font info for 76 fonts, out of 3000000 for 9000
@@ -517,7 +526,7 @@ onts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 vetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on sig-alternate-sample.pdf (6 pages, 198550 bytes).
+Output written on sig-alternate-sample.pdf (6 pages, 199682 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
