@@ -9,45 +9,24 @@
 
 
 	
-% Copyright
-\setcopyright{acmcopyright}
-%\setcopyright{acmlicensed}
-%\setcopyright{rightsretained}
-%\setcopyright{usgov}
-%\setcopyright{usgovmixed}
-%\setcopyright{cagov}
-%\setcopyright{cagovmixed}
-
-
-% DOI
-\doi{10.475/123_4}
-
-% ISBN
-\isbn{123-4567-24-567/08/06}
+\permission{This paper was developed in the course \emph{Scientific Method} in the winter semester 2016
+at University of Southern Denmark. The paper was developed as part of an in-course student project and
+might contain third-party material under (external) copyright. It is permitted to make digital copies of
+this work for in-class use only. It is NOT permitted to publish the paper anywhere or make it publicly
+available. Copyrights for components of this work owned by others than the authors are honored and
+remain untouched. For further information, please contact M. Kuhrmann (kuhrmann@mmmi.sdu.dk).}
 
 \title{Experiment on Performance Difference between Test Driven Development and Code First Test After}
 
-\numberofauthors{3}
+\numberofauthors{1}
 \author{
-% 1st. author
 \alignauthor
-	Mads Riisom\\
-	\affaddr{University of Southern Denmark}\\
-	\affaddr{Odense, Denmark}\\
-	\email{marii13@student.sdu.dk}
-% 2nd. author
-\alignauthor
-	Tenna Cortz\\
-	\affaddr{University of Southern Denmark}\\
-	\affaddr{Odense, Denmark}\\
-	\email{tecor13@student.sdu.dk}
-% 3rd. author
-\alignauthor
-	Henrik Bolding Frank\
-	\affaddr{University of Southern Denmark}\\
-	\affaddr{Odense, Denmark}\\
-	\email{hefra13@student.sdu.dk}
+Tenna Cortz, Mads Riisom, Henrik Bolding Frank\\
+ \affaddr{University of Southern Denmark, M\ae ask Mc-Kinny M\o ller Institute}\\
+ \affaddr{Campusvej 55, 5230 Odense M, Denmark}\\
+ \email{\{tecor13, marii13, hefra13\}@student.sdu.dk}
 }
+
 
 \maketitle
 \begin{abstract}
@@ -98,45 +77,52 @@ The four tasks were randomly distributed among the students with no knowledge to
 
 While performing the experiment the group participated in a supporting capacity, as well as observers and coordinators. While helping the students with the difficult parts of the experiment, the group gained more insights into the different tasks, and the students' approaches to the tasks. These insights could influence the group's objectivity to the experiment process as well as their perception of the results.
 
-At the beginning of the experiment the students received a code skeleton to work from, to ensure that the solutions would have a similar structure, and therefore would be easier to compare. The submitted solutions was evaluated using an ordinal scale, from where it were decided whether the student were in one of the following three states; failed, critical and passed. These are described in table \ref{StatesTable}.
+At the beginning of the experiment the students received a code skeleton to work from, to ensure that the solutions would have a similar structure, and therefore would be easier to compare. The submitted solutions was evaluated using an ordinal scale, from where it were decided whether the student were in one of the following three states; failed, critical and passed. These are described in Table \ref{StatesTable}.
+
+
 
 \begin{table}[]
 \centering
 \caption{States}
 \label{StatesTable}
-\begin{tabular}{lllll}
-\cline{1-2}
-\multicolumn{1}{|l|}{\textbf{States}}   & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}\textbf{Description}\end{tabular}}\\ \cline{1-2}
-\multicolumn{1}{|l|}{Failed state}   & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Solutions that has no chance to run\\ in a centralized environment\end{tabular}}\\ \cline{1-2}
-\multicolumn{1}{|l|}{Critical state} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Solutions that has a high probability\\ to run\end{tabular}}\\ \cline{1-2}
-\multicolumn{1}{|l|}{Passed state}   & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Solutions (partically) fulfilling the\\ requirement\end{tabular}}\\ \cline{1-2}
+\begin{tabular}{|l|p{0.68\linewidth}|}
+\hline
+\textbf{States} & \textbf{Description} \\
+\hline
+\hline
+Failed state & Solutions that has no chance to run in a centralized environment \\
+Critical state & Solutions that has a high probability to run \\
+Passed state & Solutions (partically) fulfilling the  requirement \\
+\hline
 \end{tabular}
 \end{table}
 
 Afterwards the solutions' states and questionnaires were analysed to see if there was a correlation between the test-first or the test-after approach, and the task description's granularity.
 
+%Mangler beskrivelser af disse!
+\begin{equation*}
+\text{devApp}=\{\text{SLTL, SLTF, NSTL, NSTF}\}
+\end{equation*}
+\begin{equation*}
+\text{Perf}_{\emph{total, dev}}=\dfrac{1.0\times \Sigma P_{\emph{dev}}+0.5\times \Sigma C_{\emph{dev}}+0.01\times \Sigma F_{\emph{dev}}}{\# \text{Participants}_{\emph{dev}}}
+\end{equation*}
+
 \section{Results}
 The dataset the experiment is based on, consists of 65 data points, from where 3 data points were rejected as they did not fulfill the requirements of the questionnaires, in other words they were either double or incomplete submission. Therefore, only 62 data points are represented in the following section.
 
 All the subjects had submitted a zip-file containing their solution based on the code skeleton provided for the experiment. The 3 states the submissions were categorized in, were evaluated as if it was a real exam submission.
-The states were divided as follows:
-
-\begin{itemize}
-	\item 23 - failed state attempts
-	\item 16 - critical state attempts
-	\item 23 - passed state attempt
-\end{itemize}
+The states were divided as seen in Figure \ref{fig:Distribution of student's performance}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img01}
 	\caption{Distribution of student's performance}
-	\label{fig:Distribution of student's performancel}
+	\label{fig:Distribution of student's performance}
 \end{figure}
 % Her er et eksempel på hvordan man laver en ref til en figur. Jeg sætter et label som er en markør og bruger den til at link med, på den måde opdatere tallet hvis der kommer end ny figur ind.
 Figure~\ref{fig:Distribution of student's performancel} represents the distribution of student's performance in the experiment, where the evaluation of their submitted code were divided into the three states.\\
 
-As the distribution of the tasks were random, and each student got exactly one task. The number of students receiving the individual tasks were distributed as illustrated in figure~\ref{fig:Task distributions}:
+As the distribution of the tasks were random, and each student got exactly one task. The number of students receiving the individual tasks were distributed as illustrated in Figure~\ref{fig:Task distributions}:
 
 \begin{figure}[H]
 	\centering
@@ -147,7 +133,7 @@ As the distribution of the tasks were random, and each student got exactly one t
 
 38 students used the test-last approach, and 24 students used the test-first approach. Further it is an exceptional case where both the sliced and non-sliced tasks were equally distributed with 31 of each.
 
-After the assessment of the code submissions, it is possible to look at the answers of the questionnaires. Shown in figure~\ref{fig:Student's own experience rating} the student's perception of their own programming experience in these fields; General programming, C{\#}, Visual Studio, Unit testing, NUnit testing framework and Test-driven development (TDD).
+After the assessment of the code submissions, it is possible to look at the answers of the questionnaires. Shown in Figure~\ref{fig:Student's own experience rating} the student's perception of their own programming experience in these fields; General programming, C{\#}, Visual Studio, Unit testing, NUnit testing framework and Test-driven development (TDD).
 The students were rating their experience on the scale: None, Novice, Intermediate and Expert.
 
 \begin{figure}[H]
@@ -166,11 +152,11 @@ It is interesting to see that the students who ended up with TF tasks rated them
 	\label{fig:TDD experience in tasks}
 \end{figure}
 
-When looking at figure~\ref{fig:Student's own experience rating} and ~\ref{fig:TDD experience in tasks}, there are more people with none TDD-experience in the test-last approach, which also is an exceptional case.
+When looking at Figure~\ref{fig:Student's own experience rating} and ~\ref{fig:TDD experience in tasks}, there are more people with none TDD-experience in the test-last approach, which also is an exceptional case.
 
 The experiment aimed to investigate the performance difference between Test-Driven Development (TDD) and the more common Code First Test After (CFTA) approach, with either step by step instructions (Sliced) or free text (Non-sliced).\\
 
-As the experiment aimed to investigate the performance based on the four tasks distributed amongst the students, figure~\ref{fig:Student's task performance} shows the code states divided by the tasks.
+As the experiment aimed to investigate the performance based on the four tasks distributed amongst the students, Figure~\ref{fig:Student's task performance} shows the code states divided by the tasks.
 
 \begin{figure}[H]
 	\centering
@@ -179,15 +165,15 @@ As the experiment aimed to investigate the performance based on the four tasks d
 	\label{fig:Student's task performance}
 \end{figure}
 
-As it is stated in figure~\ref{fig:Student's task performance}, there are a tendency for the students' submissions to pass with sliced tasks.
+As it is stated in Figure~\ref{fig:Student's task performance}, there are a tendency for the students' submissions to pass with sliced tasks.
 
 Figure~\ref{fig:SLTL percentage distributions with relative task numbers} shows the distributions between the students self-rating of programming experience level (None, Novice, Intermediate, Expert), and their correlating submission state (Passed, Critical, Failed), divided into each of the tasks respectively.
-It is important to notice that there were no students who have rated their programming experience  as "None" which means that they could have excluded this in figure~\ref{fig:SLTL percentage distributions with relative task numbers}-\ref{fig:NSTF percentage distributions with relative task numbers}. These are however included in the diagrams as it was an option in the pre-questionnaire, and therefore if excluded, could give a skewed view of the students programming experience levels. This does also apply for the "Expert" ratings which is described show in figure~\ref{fig:SLTL percentage distributions with relative task numbers}.
+It is important to notice that there were no students who have rated their programming experience  as "None" which means that they could have excluded this in Figure~\ref{fig:SLTL percentage distributions with relative task numbers}-\ref{fig:NSTF percentage distributions with relative task numbers}. These are however included in the diagrams as it was an option in the pre-questionnaire, and therefore if excluded, could give a skewed view of the students programming experience levels. This does also apply for the "Expert" ratings which is described show in Figure~\ref{fig:SLTL percentage distributions with relative task numbers}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img06}
-	\caption{SLTL percentage distributions with relative task numbers}
+	\caption{Relative distribution and absolute numbers for the SLTL task}
 	\label{fig:SLTL percentage distributions with relative task numbers}
 \end{figure}
 
@@ -197,16 +183,16 @@ It is important to notice that there were only one student who rated him- or her
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img07}
-	\caption{SLTF percentage distributions with relative task numbers}
+	\caption{Relative distribution and absolute numbers for the SLTF task}
 	\label{fig:SLTF percentage distributions with relative task numbers}
 \end{figure}
 
-In figure~\ref{fig:SLTF percentage distributions with relative task numbers} it is seen that only 50\% of the "Intermediate" students submitted solutions which fulfilled the requirements satisfying, where there are none "Novice" students who did. On the other hand it is seen that it is respectively 12.5\% and 50\% in the "Intermediate" and "Novice" who were in the Critical state. The last percentages are 37.5\% and 50\% for respectively the "Intermediate" and the "Novice" students are those who failed.
+In Figure~\ref{fig:SLTF percentage distributions with relative task numbers} it is seen that only 50\% of the "Intermediate" students submitted solutions which fulfilled the requirements satisfying, where there are none "Novice" students who did. On the other hand it is seen that it is respectively 12.5\% and 50\% in the "Intermediate" and "Novice" who were in the Critical state. The last percentages are 37.5\% and 50\% for respectively the "Intermediate" and the "Novice" students are those who failed.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img08}
-	\caption{NSTL percentage distributions with relative task numbers}
+	\caption{Relative distribution and absolute numbers for the NSTL task}
 	\label{fig:NSTL percentage distributions with relative task numbers}
 \end{figure}
 
@@ -215,7 +201,7 @@ Figure~\ref{fig:NSTL percentage distributions with relative task numbers} shows 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{img09}
-	\caption{NSTF percentage distributions with relative task numbers}
+	\caption{Relative distribution and absolute numbers for the NSTF tasks}
 	\label{fig:NSTF percentage distributions with relative task numbers}
 \end{figure}
 
@@ -241,7 +227,7 @@ Figure~\ref{fig:Novice normalized data distributed in tasks in accordance to tot
 	\label{fig:Novice normalized data distributed in tasks in accordance to total normalized data}
 \end{figure}
 
-In figure~\ref{fig:Novice normalized data distributed in tasks in accordance to total normalized data} it is illustrated that the "Novice" normalized data is lower than the total in all tasks but in the NSTL task. This data suggest that people who rate their programming experience as "Novice" is more predisposed to doing well when given the NSTL task, than when given one of the other tasks.
+In Figure~\ref{fig:Novice normalized data distributed in tasks in accordance to total normalized data} it is illustrated that the "Novice" normalized data is lower than the total in all tasks but in the NSTL task. This data suggest that people who rate their programming experience as "Novice" is more predisposed to doing well when given the NSTL task, than when given one of the other tasks.
 
 \begin{figure}[H]
 	\centering
