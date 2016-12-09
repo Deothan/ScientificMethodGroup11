@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+
+\bibitem{fucci2}
+D.~Fucci and B.~Turhan.
+\newblock A replicated experiment on the effectiveness of test-first
+  development.
+\newblock In {\em 2013 ACM / IEEE International Symposium on Empirical Software
+  Engineering and Measurement}, pages 103--112, Oct 2013.
+
+\bibitem{fucci1}
+D.~Fucci, B.~Turhan, and M.~Oivo.
+\newblock On the effects of programming and testing skills on external quality
+  and productivity in a test-driven development context.
+\newblock In {\em Proceedings of the 19th International Conference on
+  Evaluation and Assessment in Software Engineering}, EASE '15, pages
+  25:1--25:6, New York, NY, USA, 2015. ACM.
+
+\bibitem{henchy1}
+D.~C.~G. Thomas~Henchy.
+\newblock Evaluation apprehension and the social facilitation of domnant and
+  subordinate responses.
+\newblock {\em Journal of Personality and Social Psychology}, 10(4):446--454,
+  jan 1969.
+
+\bibitem{wohlin1}
+C.~Wohlin, P.~Runeson, M.~H\"{o}st, M.~C. Ohlsson, B.~Regnell, and
+  A.~Wessl{\'e}n.
+\newblock {\em Experimentation in Software Engineering: An Introduction}.
+\newblock Kluwer Academic Publishers, Norwell, MA, USA, 2000.
+
+\end{thebibliography}
