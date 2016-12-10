@@ -1,5 +1,15 @@
 \begin{thebibliography}{1}
 
+\bibitem{astels1}
+D.~Astels.
+\newblock {\em Test Driven Development: A Practical Guide}.
+\newblock Prentice Hall Professional Technical Reference, 2003.
+
+\bibitem{beck1}
+Beck.
+\newblock {\em Test Driven Development: By Example}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 2002.
+
 \bibitem{fucci2}
 D.~Fucci and B.~Turhan.
 \newblock A replicated experiment on the effectiveness of test-first
@@ -14,6 +24,11 @@ D.~Fucci, B.~Turhan, and M.~Oivo.
 \newblock In {\em Proceedings of the 19th International Conference on
   Evaluation and Assessment in Software Engineering}, EASE '15, pages
   25:1--25:6, New York, NY, USA, 2015. ACM.
+
+\bibitem{shull1}
+F.~Shull, G.~Melnik, B.~Turhan, L.~Layman, M.~Diep, and H.~Erdogmus.
+\newblock What do we know about test-driven development?
+\newblock {\em IEEE Software}, 27(6):16--19, Nov 2010.
 
 \bibitem{henchy1}
 D.~C.~G. Thomas~Henchy.

@@ -127,23 +127,14 @@ Test Driven Development, Code First Test After, Performance, Development Approac
 
 
 \section{Introduction}
-
-%The following, is only stated to define structure, and should not be included in the final version. The bulletpoints is to clarify when and what should be in this sections.
-\textbf{Motivation.}\\
-\textbf{Problem statement.}\\
-\textbf{contribution.}\\
-\textbf{reading guide.}\\
-
-In order to develop software faster, several approaches are available. The goal of this experiment, is to determine whether Test Driven Development, or Code First Test After approach has an increase in productivity, when developing software. In TDD the unit tests are written before the actual production code. When the test case has been described, just enough code to make the test case pass, is developed.
-In CFTA code is tested, as the production code is being developed.
-
+Test-driven development is a software development process where the developer creates the test first, and then develop the minimum amount of code to pass the test, then if needed the code can be refactored\cite{beck1}. TDD has gained increased interest because of its claim to increase productivity and increase early fault detection\cite{astels1}. These claims have been subject to multiple studies (see section~\ref{sec:Related work}) to try and verify if TDD makes developers more productive. So far there are no conlcusive results supporting the claim\cite{shull1}.
+%subject to change
 As this experiment have been conducted several times, the outcome of this project does not contribute with a new type of data. Instead it will hopefully contribute with more data, in order to support the existing experiments.\\
-[0.5em]
-\textbf{Reading Guide.}
-First the research method will be described, in order to establish a base terminology to the reader. This section will also describe the requirements to the experiment as well.
-A conclusion will be made, by the result presented later in this article. Also threads to validity will be considered, when drawing this conclusion.
+
+The paper is organized as follows: Section~\ref{sec:Related work} goes through the previous experiments and states our contribution, in section~\ref{sec:Research method} explains the experiment setup, in section~\ref{sec:Results} shows the results and our analysis, in section~\ref{sec:Discussion} the results are discussed and compared to the earlier stated related work, in section~\ref{sec:Threats to validity} the threats to validity is considered and in section~\ref{sec:Conclusion} we present the conclusion. 
 
 \section{Related work}
+\label{sec:Related work}
 As mentioned in the introduction, this experiment has been conducted several times before. The experiment kit, used in this experiment, has been developed by D. Fucci, B. Turhan and M. Oivo. The same experiment kit has been used throughout several experiments.
 
 The first experiment D. Fucci, B. Turhan and M. Oivo conducted, tested the effects of programming and testing skills, on external quality and productivity in a test-driven development context \cite{fucci1}. The results showed a linear relation between testing effort and the two outcomes of external code quality and productivity. Also the correlation is stronger for the subjects with higher pre-existing skills. In a few words, the experiment was positive, but "developers' skills, like programming language and unit-testing have a significant impact on their productivity but not on the external quality of the developed software".
@@ -154,6 +145,15 @@ In this study the conclusion is radically different, as there were no difference
 Our experiment is related to these experiments, as the research field is the same. In both experiments \cite{fucci1, fucci2} the research question is whether test-driven development has a performance impact. In our experiment, the group investigate if there is a difference in performance between a test-driven environment, and a test-last environment.
 
 \section{Research method}
+
+\label{sec:Research method}
+%The following, is only stated to define structure, and should not be included in the final version. The bulletpoints is to clarify when and what should be in this sections.
+\textbf{Research objective/question.}\\
+\textbf{Task.}\\
+\textbf{Setup.}\\
+\textbf{Data collection.}\\
+\textbf{Data study.}\\
+
 
 %Insert research question here!
 
@@ -224,7 +224,7 @@ The formula and equation is in figure
 In the above equation ``Perf'' stands for Performance, ``P" for Passed state, ``C" for critical state and ``F" for failed state. 
 The results of the calculations can be seen in Section(REFERENCE RESULTS)
 
-\section{Results}
+\label{sec:Results}
 In this section, the collected results of the experiment are presented. Data from questionnaires were automatically collected by Google, as they were fulfilled in a "Google Forms" document. Code submitted by the subjects, has been analyzed and graded.
 
 \subsection{Study Population}
@@ -361,6 +361,7 @@ Figure~\ref{fig:Intermediate normalized data ditsributed in tasks in accordance 
 
 
 \section{Discussion}
+\label{sec:Discussion}
 In this section we compare TDD and CFTA according to our results. The result doesn't give any clear answer to what is best, but the results indicate that for the students as novice developers it was easier to use the code first approach, which could be because they didn't know how to solve the problem at first, but used trial and error to solve small parts of the assignment step by step to find a solution that seemed to cover the requirements. When the developer does not know how the code will be structured in the end it is difficult to write tests that will cover everything.
 
 This has to be compared to the more experienced developers, who knew how they were going to solve the assignment from the requirements. Which allowed them to write the tests according to their initial solution and then use the tests to identify issues they might run into when implementing the logic later on.
@@ -373,6 +374,7 @@ To ensure that there was no bias in the assignment of tasks the students receive
 
 
 \section{Threats to validity}
+\label{sec:Threats to validity}
 In this section we will go over the threats to validity using the guidelines by Wohlin et al.\cite{wohlin1}.
 
 The threats to the Internal validity of this experiment are mostly related to the selection process. The experiment was conducted while the students were performing a test, which would indicate that they were highly motivated to perform well.
@@ -385,8 +387,7 @@ The results might also have been affected by the student's not having the proper
 
 The principal Conclusion validity is affected by the \textit{heterogeneity of the subjects} was rather large, as the test subjects was still only in the start of their university education, so their previously programming ability still played a major role in their programming proficiency which is also concerning the External validity. Also we do not claim that the results can be generalized for the entire software developer population, as these students were having difficulties solving the basic programming task they had to hand in. 
 
-
-\section{Conclusion}
+\label{sec:Conclusion}
 In this study we performed an experiment to investigate if there was an increase in productivity when using TDD instead of CFTA. The test subjects were not representative of the target group of software developers so these findings only reflect how TDD and CFTA compare when used by students. The experiment showed that with this test group the approach was less important than how detailed the task was described.
 
 But the experiment indicates that for students considering themselves as Novices making the tests first yielded worse results than Test Last. The students considering themselves as intermediate the Test first seemed to yield the best results. But these results has to be tested further to make any generalized conclusion as there is no clear trend in the results.
