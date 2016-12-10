@@ -78,8 +78,7 @@ Tenna Cortz, Mads Riisom, Henrik Bolding Frank\\
 \maketitle
 \begin{abstract}
 Test Driven Development (TDD) is considered a good approach concerning productivity compared to the more common Code First Test After (CFTA). We aim to investigate if there is a performance gain in using Test-Driven Development (TDD) over Code First Test After (CFTA).We performed an experiment using 65 test subjects, who received one of four coding tasks, the tasks had the same end result, but the tasks were described and had to be solved in different ways.
-The experiment showed that with this test group the approach was less important than how detailed the task was described.
-From this experiment we cannot make any generalized conclusion as the test group is not a representative of the target group, but there seem to be no real difference between TDD and CFTA.
+From this experiment we are not able, to generate a conclusion, as the subject group used in this project, doesn't seem to be representative of the actual target group.
 
 \end{abstract}
 
@@ -176,16 +175,21 @@ The test-last approach tasks were where the students had to implement the requir
 The test-first approach tasks were where the students had to implement a test to fulfill the requirement, and then implement as little code as possible to satisfy the specific test.
 The sliced tasks were where the requirements were described step-by-step, whereas the non-sliced tasks, had requirement descriptions written in a text block.\\
 
+%\clearpage
 
-INSERT FLOWCHART HERE!!!!\\
+%\begin{figure}[!ht]
+%\hspace*{-0.65in}
+	%\centering
+	%\includegraphics{flow01}
+	%\caption{Flowchart of experiment}
+	%\label{fig:Flowchart}
+%\end{figure}
+%\clearpage
 
-
-
-
-The flowchart (REFERENCE) shows how the entire experiment was conducted, including our preparation for conducting the experiment, the experiment itself, and the data analysis afterwards.
+The flowchart \ref{fig:Flowchart} shows how the entire experiment was conducted, including our preparation for conducting the experiment, the experiment itself, and the data analysis afterwards.
 While performing the experiment the group participated in a supporting capacity, as well as observers and coordinators. While helping the students with the difficult parts of the experiment, the group gained more insights into the different tasks, and the students' approaches to the tasks. These insights could influence the group's objectivity to the experiment process as well as their perception of the results.
 
-As it is seen in the flowchart (REFERENCE) we verified the students submissions, by checking if the students submitted their coding solutions to Blackboard, and have answered the pre- and post-questionnaires. If this were done properly we collected their checklists, to see if the students had followed the instruction hereon.
+As it is seen in the flowchart \ref{fig:Flowchart} we verified the students submissions, by checking if the students submitted their coding solutions to Blackboard, and have answered the pre- and post-questionnaires. If this were done properly we collected their checklists, to see if the students had followed the instruction hereon.
 At the experiment the students received a code skeleton to work from, to ensure that the solutions had a similar structure, and therefore would be easier to compare. The submitted solutions were evaluated using an ordinal scale, from where it were decided whether the student was in one of the following three states; failed, critical and passed. These are described in Table \ref{StatesTable}.
 
 \begin{table}[!ht]
@@ -207,7 +211,7 @@ Passed state & Solutions (partially) fulfilling the requirement \\
 Afterwards the solutions' states and questionnaires were analyzed to see if there was a correlation between the test-first or test-after approach, and the task description's granularity.
 
 As described, our last step of the experiment, was to analyze the experiment data. This was done by finding the deviation of the tasks distributed to the students. Hereafter, we found how the states were distributed in within each task, and calculated the weighted normalized data, with weights of on the states; Passed=1, Critical=0.5 and Failed=0.01. The failed weight was set to 0.01 to ensure calculations without multiplying with 0, which would give wrong results.
-The formula and equation is seen below:
+The formula and equation is in figure
 
 \[
 \begin{array}{rl}
@@ -220,13 +224,8 @@ The formula and equation is seen below:
 In the above equation ``Perf'' stands for Performance, ``P" for Passed state, ``C" for critical state and ``F" for failed state. 
 The results of the calculations can be seen in Section(REFERENCE RESULTS)
 
-
-
-
-
-
 \section{Results}
-%text text text!!!    bla bla bla bla bla bla bla bla bla mere bla
+In this section, the collected results of the experiment are presented. Data from questionnaires were automatically collected by Google, as they were fulfilled in a "Google Forms" document. Code submitted by the subjects, has been analyzed and graded.
 
 \subsection{Study Population}
 \label{DemograpichInformation}
@@ -388,7 +387,7 @@ The principal Conclusion validity is affected by the \textit{heterogeneity of th
 
 
 \section{Conclusion}
-In this study we performed an experiment to investigate if there was an increase in productivity when the using TDD instead of CFTA. The test subjects were not representative of the target group of software developers so these findings only reflect how TDD and CFTA compare when used by students. 
+In this study we performed an experiment to investigate if there was an increase in productivity when using TDD instead of CFTA. The test subjects were not representative of the target group of software developers so these findings only reflect how TDD and CFTA compare when used by students. The experiment showed that with this test group the approach was less important than how detailed the task was described.
 
 But the experiment indicates that for students considering themselves as Novices making the tests first yielded worse results than Test Last. The students considering themselves as intermediate the Test first seemed to yield the best results. But these results has to be tested further to make any generalized conclusion as there is no clear trend in the results.
 
