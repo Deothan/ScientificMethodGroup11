@@ -209,19 +209,16 @@ Afterwards the solutions' states and questionnaires were analyzed to see if ther
 As described, our last step of the experiment, was to analyze the experiment data. This was done by finding the deviation of the tasks distributed to the students. Hereafter, we found how the states were distributed in within each task, and calculated the weighted normalized data, with weights of on the states; Passed=1, Critical=0.5 and Failed=0.01. The failed weight was set to 0.01 to ensure calculations without multiplying with 0, which would give wrong results.
 The formula and equation is seen below:
 
-\[
-\begin{array}{rl}
+\begin{equation} \label{eq1}
+\begin{split}
 \text{devApp} &= \{\text{SLTL, SLTF, NSTL, NSTF}\} \\
 & \\
 \text{Perf}_{\emph{total, dev}} &= \dfrac{1.0\times \sum{P_{\emph{dev}}}+0.5\times \sum {C_{\emph{dev}}}+0.01\times \sum{ F_{\emph{dev}}}}{\# \text{Participants}_{\emph{dev}}}
-\end{array}
-\]
+\end{split}
+\end{equation}
 
 In the above equation ``Perf'' stands for Performance, ``P" for Passed state, ``C" for critical state and ``F" for failed state. 
 The results of the calculations can be seen in Section(REFERENCE RESULTS)
-
-
-
 
 
 
