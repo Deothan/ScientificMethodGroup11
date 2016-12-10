@@ -146,6 +146,7 @@ In this study the conclusion is radically different, as there were no difference
 Our experiment is related to these experiments, as the research field is the same. In both experiments \cite{fucci1, fucci2} the research question is whether test-driven development has a performance impact. In our experiment, the group investigate if there is a difference in performance between a test-driven environment, and a test-last environment.
 
 \section{Research method}
+
 \label{sec:Research method}
 %The following, is only stated to define structure, and should not be included in the final version. The bulletpoints is to clarify when and what should be in this sections.
 \textbf{Research objective/question.}\\
@@ -155,28 +156,37 @@ Our experiment is related to these experiments, as the research field is the sam
 \textbf{Data study.}\\
 
 
+%Insert research question here!
+
 The experiment aimed to investigate the performance difference between TDD and the CFTA approach, with either step by step instructions (Sliced) or free text (Non-sliced). To investigate this we performed an experiment using third semester Software Engineering bachelor students at SDU as test subjects.
 
-Before and after the experiment was conducted, the students were handed a pre- and a postquestionnaire respectively.
-The prequestionnaire contained questions regarding the students perception of their own skill level, where the postquestionnaire contained questions about how well the students thought they had performed during the experiment.
 
-The task the students should develop, were based on four possible tasks, that were randomly distributed among the students. They were to develop an application that could calculate the bow\-ling score of a single game, without a graphical user interface. Further the students had to develop a software solution and provide a test environment, that tested the requirements of the task. These requirements for the calculations were explained in the task descriptions, where it were expected for the students to use the specified approach.
+Before and after the actual experiment was conducted, the students were handed a pre- and a post-questionnaire respectively.
+The pre-questionnaire contained questions regarding the students perception of their own skill level, where the post-questionnaire contained questions about how well the students thought they performed during the experiment.
+
+The actual experiment was based on four tasks, which were distributed randomly among the students, with no knowledge to us, which students received which task. This were decided as we had previous knowledge of the students strengths and weaknesses, and could therefore insinuate a biased distribution. The tasks contained the same information, were the students were to develop an application that could calculate the bow\-ling score of a single game. This software solution, should be implemented without a graphical user interface, and provide a test environment, that tested the requirements of the task. The requirements for the calculations were explained in the task descriptions, where it was expected for the students to use the specified approach.
 The tasks were as follows:
 \begin{itemize}
-	\item Non-sliced, test-last (NSTL)
-	\item Sliced, test last (SLTL)
-	\item Non-sliced test first (NSTF)
-	\item Sliced, test first (SLTF)
+\item Non-sliced, test-last (NSTL)
+\item Sliced, test last (SLTL)
+\item Non-sliced test first (NSTF)
+\item Sliced, test first (SLTF)
 \end{itemize}
-The test-last approach tasks were where the students had to implement the requirement, followed by implementing the test which ensures the fulfillment of the requirement.
-The test-first approach tasks were where the students had to implement a test to fulfiill the requirement, and then implement as little code to satisfy the test.
-The sliced tasks were where the requirements were described step-by-step, whereas the non-sliced tasks had requirement descriptions in one full textblock.
+The test-last approach tasks were where the students had to implement the requirement, followed by implementing the test, which should ensure the fulfillment of the requirement.
+The test-first approach tasks were where the students had to implement a test to fulfill the requirement, and then implement as little code as possible to satisfy the specific test.
+The sliced tasks were where the requirements were described step-by-step, whereas the non-sliced tasks, had requirement descriptions written in a text block.\\
 
-The four tasks were randomly distributed among the students with no knowledge to us of which students got which specific task. This were decided as the group had previous knowledge of the students strengths and weaknesses, and could therefore insinuate a biased distribution.
 
+INSERT FLOWCHART HERE!!!!\\
+
+
+
+
+The flowchart (REFERENCE) shows how the entire experiment was conducted, including our preparation for conducting the experiment, the experiment itself, and the data analysis afterwards.
 While performing the experiment the group participated in a supporting capacity, as well as observers and coordinators. While helping the students with the difficult parts of the experiment, the group gained more insights into the different tasks, and the students' approaches to the tasks. These insights could influence the group's objectivity to the experiment process as well as their perception of the results.
 
-At the beginning of the experiment the students received a code skeleton to work from, to ensure that the solutions would have a similar structure, and therefore would be easier to compare. The submitted solutions was evaluated using an ordinal scale, from where it were decided whether the student were in one of the following three states; failed, critical and passed. These are described in Table \ref{StatesTable}.
+As it is seen in the flowchart (REFERENCE) we verified the students submissions, by checking if the students submitted their coding solutions to Blackboard, and have answered the pre- and post-questionnaires. If this were done properly we collected their checklists, to see if the students had followed the instruction hereon.
+At the experiment the students received a code skeleton to work from, to ensure that the solutions had a similar structure, and therefore would be easier to compare. The submitted solutions were evaluated using an ordinal scale, from where it were decided whether the student was in one of the following three states; failed, critical and passed. These are described in Table \ref{StatesTable}.
 
 \begin{table}[!ht]
 \centering
@@ -189,23 +199,28 @@ At the beginning of the experiment the students received a code skeleton to work
 \hline
 Failed state & Solutions that has no chance to run in a centralized environment \\
 Critical state & Solutions that has a high probability to run \\
-Passed state & Solutions (partically) fulfilling the  requirement \\
+Passed state & Solutions (partially) fulfilling the requirement \\
 \hline
 \end{tabular}
 \end{table}
 
-Afterwards the solutions' states and questionnaires were analysed to see if there was a correlation between the test-first or the test-after approach, and the task description's granularity.
+Afterwards the solutions' states and questionnaires were analyzed to see if there was a correlation between the test-first or test-after approach, and the task description's granularity.
 
-%Mangler beskrivelser af disse!
-\[
-\begin{array}{rl}
+As described, our last step of the experiment, was to analyze the experiment data. This was done by finding the deviation of the tasks distributed to the students. Hereafter, we found how the states were distributed in within each task, and calculated the weighted normalized data, with weights of on the states; Passed=1, Critical=0.5 and Failed=0.01. The failed weight was set to 0.01 to ensure calculations without multiplying with 0, which would give wrong results.
+The formula and equation is seen below:
+
+\begin{equation} \label{eq1}
+\begin{split}
 \text{devApp} &= \{\text{SLTL, SLTF, NSTL, NSTF}\} \\
 & \\
-%\end{equation*}
-%\begin{equation*}
 \text{Perf}_{\emph{total, dev}} &= \dfrac{1.0\times \sum{P_{\emph{dev}}}+0.5\times \sum {C_{\emph{dev}}}+0.01\times \sum{ F_{\emph{dev}}}}{\# \text{Participants}_{\emph{dev}}}
-\end{array}
-\]
+\end{split}
+\end{equation}
+
+In the above equation ``Perf'' stands for Performance, ``P" for Passed state, ``C" for critical state and ``F" for failed state. 
+The results of the calculations can be seen in Section(REFERENCE RESULTS)
+
+
 
 \section{Results}
 \label{sec:Results}
