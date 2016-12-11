@@ -10,6 +10,12 @@ Beck.
 \newblock {\em Test Driven Development: By Example}.
 \newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 2002.
 
+\bibitem{erdogmus1}
+H.~Erdogmus, M.~Morisio, and M.~Torchiano.
+\newblock On the effectiveness of the test-first approach to programming.
+\newblock {\em IEEE Transactions on Software Engineering}, 31(3):226--237,
+  March 2005.
+
 \bibitem{fucci2}
 D.~Fucci and B.~Turhan.
 \newblock A replicated experiment on the effectiveness of test-first
