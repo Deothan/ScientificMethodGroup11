@@ -131,19 +131,21 @@ Tenna Cortz, Mads Riisom, Henrik Bolding Frank\\
 Test Driven Development, Code First Test After, Performance, Development Approach, Software, Engineering, \newline Experiment
 \end{keywords}
 
-
+%We need a source for this CFTA
 \section{Introduction}
 Test-driven development is a software development process where the developer creates the test first, and then develop the minimum amount of production code to pass the test, then if needed the code is refactored \cite{beck1}. Test-Driven development has gained increased interest because of its claim to increase early fault detection,  external code quality and productivity \cite{astels1}. These claims have been subject to multiple studies (see section~\ref{sec:Related work}) but so far there are no conlcusive results supporting the claim \cite{shull1}.
 
+Code-First-Test-After is and intuitive development method, it works by first implementing the production code needed to fulfil a requirement and then making tests to verify that the requirement is indeed fulfiled. Sometimes due to time constraints this test after approach has lead to a lower test coverage, because developers then skip most of the tests, which can be reflected in a lower external code quality.
+
 This experiment is based on of experiments done by Fucci et al. \cite{fucci2} and it aims to verify if there is a correlation between Test-Driven development and Test after in relation to the level of detail in the task description. We will use the state of the code as a basis for our analysis to see if the approach relates to the productivity and external quality.\\
-[0.5em]
+
 The paper is organized as follows: Section~\ref{sec:Related work} goes through the previous experiments and states our contribution, in section~\ref{sec:Research method} explains the experiment setup, in section~\ref{sec:Results} shows the results and our analysis, in section~\ref{sec:Discussion} the results are discussed and compared to the earlier stated related work, in section~\ref{sec:Threats to validity} the threats to validity is considered and in section~\ref{sec:Conclusion} we present the conclusion. 
 
 \section{Related work}
 \label{sec:Related work}
 In this section we will first report the results of a replication study aiming to verify that there is a correlation between Test-Driven development, developer productivity and the external code quality. Following that a study which investigates the relation between the subject's programming and testing capabilities in relation to Test-Driven development,
 
-The first experiment is a replication study performed by  Fucci et al. \cite{fucci2} and the experiment investigates the effectiveness of test-first development, and the motivation for replicating the experiment was to verify the model presented in the original study performed by Erdogmus et al. \cite{erdogmus1}. While doing so two new conditions were introduced. This study aimed to see what role tests plays in Test-Driven develpoment in regards to the claimed productivity and external quality increase. The outcome supported the original study showing that the number of tests has a correlation with the productivity, but it also showed that there are hidden factors still to be identified.
+The first experiment is a replication study performed by  Fucci et al. \cite{fucci2} and the experiment investigates the effectiveness of Test-Driven development, and the motivation for replicating the experiment was to verify the model presented in the original study performed by Erdogmus et al. \cite{erdogmus1}. While doing so two new conditions were introduced. This study aimed to see what role tests plays in Test-Driven develpoment in regards to the claimed productivity and external quality increase. The outcome supported the original study showing that the number of tests has a correlation with the productivity, but it also showed that there are hidden factors still to be identified.
 
 The second study was also done by Fucci et al. and tested the effects of programming and testing skills, on external quality and productivity in a test-driven development context \cite{fucci1}. Where they aimed to see if there was a correlation between the performance of Test-Driven development and the subjects programming and testing capabilities. The results showed a linear relation between the testing efforts and the external code quality and productivity. It also showed that the developers' programming and unit-testing capabilities had a significant impact on their productivity but not on the externa codel quality.
 
@@ -401,6 +403,7 @@ The results might also have been affected by the student's not having the proper
 
 The principal Conclusion validity is affected by the \textit{heterogeneity of the subjects} was rather large, as the test subjects was still only in the start of their university education, so their previously programming ability still played a major role in their programming proficiency which is also concerning the External validity. Also we do not claim that the results can be generalized for the entire software developer population, as these students were having difficulties solving the basic programming task they had to hand in. 
 
+\section{Conclusion}
 \label{sec:Conclusion}
 In this study we performed an experiment to investigate if there was an increase in productivity when using TDD instead of CFTA. The test subjects were not representative of the target group of software developers so these findings only reflect how TDD and CFTA compare when used by students. The experiment showed that with this test group the approach was less important than how detailed the task was described.
 
