@@ -77,7 +77,7 @@ Tenna Cortz, Mads Riisom, Henrik Bolding Frank\\
 
 \maketitle
 \begin{abstract}
-Test Driven Development (TDD) is considered a good approach concerning productivity compared to the more common Code First Test After (CFTA). We aim to investigate if there is a performance gain in using Test-Driven Development (TDD) over Code First Test After (CFTA).We performed an experiment using 65 test subjects, who received one of four coding tasks, the tasks had the same end result, but the tasks were described and had to be solved in different ways.
+Test Driven Development (TDD) is considered a good approach concerning productivity compared to the more common Code First Test After (CFTA). We aim to investigate if there is a performance gain in using Test-Driven Development (TDD) over Code First Test After (CFTA). We performed an experiment using 65 test subjects, who received one of four coding tasks, the tasks had the same end result, but the tasks were described and had to be solved in different ways.
 From this experiment we are not able, to generate a conclusion. There doesn't seem to be a relation between the test subjects, and the actual target group, using these approaches.
 \end{abstract}
 
@@ -126,9 +126,9 @@ Test Driven Development, Code First Test After, Performance, Development Approac
 
 
 \section{Introduction}
-Test-driven development is a software development process where the developer creates the test first, and then develop the minimum amount of production code to pass the test, then if needed the code is refactored \cite{beck1}. Test-Driven development has gained increased interest because of its claim to increase early fault detection,  external code quality and productivity \cite{astels1}. These claims have been subject to multiple studies (see section~\ref{sec:Related work}) but so far there are no conlcusive results supporting the claim \cite{shull1}.
+Test-driven development is a software development process where the developer creates the test first, and then develop the minimum amount of production code to pass the test, then if needed the code is refactored \cite{beck1}. Test-driven development has gained increased interest because of its claim to increase early fault detection, external code quality and productivity \cite{astels1}. These claims have been subject to multiple studies (Section~\ref{sec:Related work}) but so far there are no conlcusive results supporting the claim \cite{shull1}.
 
-This experiment is based on of experiments done by Fucci et al. \cite{fucci2} and it aims to verify if there is a correlation between Test-Driven development and Test after in relation to the level of detail in the task description. We will use the state of the code as a basis for our analysis to see if the approach relates to the productivity and external quality.\\
+This experiment is based on experiments done by Fucci et al. \cite{fucci2} and it aims to verify if there is a correlation between Test-driven development and Test-after in relation to the level of detail in the task description. We will use the state of the code as a basis for our analysis to see if the approach relates to the productivity and external quality.\\
 
 The paper is organized as follows: Section~\ref{sec:Related work} goes through the previous experiments and states our contribution, in section~\ref{sec:Research method} explains the experiment setup, in section~\ref{sec:Results} shows the results and our analysis, in section~\ref{sec:Discussion} the results are discussed and compared to the earlier stated related work, in section~\ref{sec:Threats to validity} the threats to validity is considered and in section~\ref{sec:Conclusion} we present the conclusion. 
 
@@ -145,30 +145,34 @@ This  experiment is following these experiments and focuses on the performance d
 \section{Research method}
 
 \label{sec:Research method}
-%The following, is only stated to define structure, and should not be included in the final version. The bulletpoints is to clarify when and what should be in this sections.
-\textbf{Research objective/question.}\\
-\textbf{Task.}\\
-\textbf{Setup.}\\
-\textbf{Data collection.}\\
-\textbf{Data study.}\\
 
-
-%Insert research question here!
-
-The experiment aimed to investigate the performance difference between TDD and the CFTA approach, with either step by step instructions (Sliced) or free text (Non-sliced). To investigate this we performed an experiment using third semester Software Engineering bachelor students at SDU as test subjects.
-
+The experiment aimed to investigate the performance difference between the TDD and the CFTA approach, with either step by step instructions (Sliced) or free text (Non-sliced). To investigate this we performed an experiment using third semester Software Engineering bachelor students at SDU as test subjects.
 
 Before and after the actual experiment was conducted, the students were handed a pre- and a post-questionnaire respectively.
 The pre-questionnaire contained questions regarding the students perception of their own skill level, where the post-questionnaire contained questions about how well the students thought they performed during the experiment.
 
-The actual experiment was based on four tasks, which were distributed randomly among the students, with no knowledge to us, which students received which task. This were decided as we had previous knowledge of the students strengths and weaknesses, and could therefore insinuate a biased distribution. The tasks contained the same information, were the students were to develop an application that could calculate the bow\-ling score of a single game. This software solution, should be implemented without a graphical user interface, and provide a test environment, that tested the requirements of the task. The requirements for the calculations were explained in the task descriptions, where it was expected for the students to use the specified approach.
-The tasks were as follows:
-\begin{itemize}
-\item Non-sliced, test-last (NSTL)
-\item Sliced, test last (SLTL)
-\item Non-sliced test first (NSTF)
-\item Sliced, test first (SLTF)
-\end{itemize}
+The actual experiment was based on four tasks, which were distributed randomly among the students, with no know\-ledge to us, which students received which task. This were decided as we have previous knowledge of the students strengths and weaknesses, and could therefore insinuate a biased distribution.
+
+The tasks contained the same information, were the students where to develop an application that could calculate the bow\-ling score of a single game. This software solution, should be implemented without a graphical user interface, and provide a test environment, that tested the requirements of the task. The requirements for the calculations were explained in the task descriptions, where it was expected for the students to use the specified approach.
+The tasks that were distributed, are described in Table~\ref{TaskTable}.
+
+\begin{table}[!ht]
+\centering
+\caption{Tasks}
+\label{TaskTable}
+\begin{tabular}{|l|p{0.68\linewidth}|}
+\hline
+\textbf{Task code} & \textbf{Description} \\
+\hline
+\hline
+NSTL & Non-sliced, test-last \\
+SLTL & Sliced, test-last \\
+NSTF & Non-sliced, test-first \\
+SLTF & Sliced, test-first\\
+\hline
+\end{tabular}
+\end{table}
+
 The test-last approach tasks were where the students had to implement the requirement, followed by implementing the test, which should ensure the fulfillment of the requirement.
 The test-first approach tasks were where the students had to implement a test to fulfill the requirement, and then implement as little code as possible to satisfy the specific test.
 The sliced tasks were where the requirements were described step-by-step, whereas the non-sliced tasks, had requirement descriptions written in a text block.\\
@@ -184,8 +188,9 @@ The sliced tasks were where the requirements were described step-by-step, wherea
 %\end{figure}
 %\clearpage
 
-The flowchart \ref{fig:Flowchart} shows how the entire experiment was conducted, including our preparation for conducting the experiment, the experiment itself, and the data analysis afterwards.
-While performing the experiment the group participated in a supporting capacity, as well as observers and coordinators. While helping the students with the difficult parts of the experiment, the group gained more insights into the different tasks, and the students' approaches to the tasks. These insights could influence the group's objectivity to the experiment process as well as their perception of the results.
+The flowchart \ref{fig:Flowchart} shows how the entire experiment was conducted in three major steps; ``Startup'' which contains our preparation for conducting the experiment, ``Experiment'' that contains the experiment itself, and ``Data analysis'' containing the data analysis after data collection at the end of the experiment.
+
+While performing the experiment the group participated in a supporting capacity, as well as observers and coordinators. While helping the students with any difficulties during the experiment, the group gained more insights into the different tasks, and the students' approaches to the tasks. These insights could influence the group's objectivity to the experiment process as well as their perception of the results.
 
 The flowchart consists of several artifacts:
 \begin{itemize}
@@ -195,7 +200,8 @@ The flowchart consists of several artifacts:
 \end{itemize}
 
 As it is seen in the flowchart \ref{fig:Flowchart} we verified the students submissions, by checking if the students submitted their coding solutions to Blackboard, and have answered the pre- and post-questionnaires. If this were done properly we collected their checklists, to see if the students had followed the instruction hereon.
-At the experiment the students received a code skeleton to work from, to ensure that the solutions had a similar structure, and therefore would be easier to compare. The submitted solutions were evaluated using an ordinal scale, from where it were decided whether the student was in one of the following three states; failed, critical and passed. These are described in Table \ref{StatesTable}.
+
+In the experiment, the students received a code skeleton to work from, to ensure that the solutions had a similar structure, and therefore would be easier to compare. The submitted solutions were evaluated using an ordinal scale, from where it were decided whether the student was in one of the following three states; failed, critical and passed. These are described in Table~\ref{StatesTable}.
 
 \begin{table}[!ht]
 \centering
@@ -215,7 +221,7 @@ Passed state & Solutions (partially) fulfilling the requirement \\
 
 Afterwards the solutions' states and questionnaires were analyzed to see if there was a correlation between the test-first or test-after approach, and the task description's granularity.
 
-As described, our last step of the experiment, was to analyze the experiment data. This was done by finding the deviation of the tasks distributed to the students. Hereafter, we found how the states were distributed in within each task, and calculated the weighted normalized data, with weights of on the states; Passed=1, Critical=0.5 and Failed=0.01. The failed weight was set to 0.01 to ensure calculations without multiplying with 0, which would give wrong results.
+As described, our last step of the experiment, was to ana\-lyze the experiment data. This was done by finding the deviation of the tasks distributed to the students. Hereafter, we found how the states were distributed in within each task, and calculated the weighted normalized data, with weights of on the states; Passed=1, Critical=0.5 and Failed=0.01. The failed weight was set to 0.01 to ensure calculations without multiplying with 0, which would give wrong results.
 The formula and equation is represented in equation \ref{eq1}
 
 \begin{equation} \label{eq1}
@@ -227,7 +233,7 @@ The formula and equation is represented in equation \ref{eq1}
 \end{equation}
 
 In the above equation ``Perf'' stands for Performance, ``P" for Passed state, ``C" for critical state and ``F" for failed state. 
-The results of the calculations can be seen in Section(REFERENCE RESULTS)
+The results of the calculations can be seen in Section~\ref{DataAnalysis}
 
 \label{sec:Results}
 In this section, the collected results of the experiment are presented. Data from questionnaires were automatically collected by Google, as they were fulfilled in a "Google Forms" document. Code submitted by the subjects, has been analyzed and graded.
@@ -282,6 +288,7 @@ When looking at Figure~\ref{fig:Student's own experience rating} and Figure~\ref
 The experiment aimed to investigate the performance difference between Test-Driven Development (TDD) and the more common Code First Test After (CFTA) approach, with either step by step instructions (Sliced) or free text (Non-sliced).\\
 
 \subsection{Analysis of data} %lorte overskrift!
+\label{DataAnalysis}
 As the experiment aimed to investigate the performance based on the four tasks distributed amongst the students, Figure~\ref{fig:Student's task performance} shows the code states divided by the tasks.
 
 \begin{figure}[!ht]
@@ -408,10 +415,8 @@ In the future we would like to perform a similar test on a group which has a clo
 
 \section{Acknowledgments}
 
-First of all, we wants to thank Dr. Marco Kuhrmann for his participation and help in this experiment. Especially for providing the necessary communication with the former of the experiment kit, and the provided tools and data.
+First of all, we want to thank Davide Fucci, Burak Turhan, Markku Oivo from University of Oulu for providing the experiment kit used in this experiment.
 
-We also wants to thank Davide Fucci, Burak Turhan, Markku Oivo from University of Oulu for providing the experiment kit used in this experiment.
-
-Thanks to all students of 3. semester Software Engineering 2016 of University of Southern Denmark for participating in this project.
+Also, we want to thank all students of 3. semester Software Engineering 2016 of University of Southern Denmark for participating in this experiment.
 
 \end{document}
