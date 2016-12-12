@@ -63,13 +63,13 @@ this work for in-class use only. It is NOT permitted to publish the paper anywhe
 available. Copyrights for components of this work owned by others than the authors are honored and
 remain untouched. For further information, please contact M. Kuhrmann (kuhrmann@mmmi.sdu.dk).}
 
-\title{Experiment on Performance Difference between Test Driven Development and Code First Test After}
+\title{Experiment on Performance Difference between Test-Driven Development and Code-First-Test-After}
 
 \numberofauthors{1}
 \author{
 \alignauthor
 Tenna Cortz, Mads Riisom, Henrik Bolding Frank\\
- \affaddr{University of Southern Denmark, M\ae ask Mc-Kinny M\o ller Institute}\\
+ \affaddr{University of Southern Denmark, M\ae rsk Mc-Kinny M\o ller Institute}\\
  \affaddr{Campusvej 55, 5230 Odense M, Denmark}\\
  \email{\{tecor13, marii13, hefra13\}@student.sdu.dk}
 }
@@ -77,15 +77,15 @@ Tenna Cortz, Mads Riisom, Henrik Bolding Frank\\
 
 \maketitle
 \begin{abstract}
- \textit{Background:} Test-Driven development is as an approach focusing on testing, and through that aiming to make developers more productive and increase external code quality. When using the more intuitive Code-First-Test-After approach the production code is first developed, then tests to verify the code.\\
+ \textit{Background:} Test-Driven development is an approach focusing on testing, and through that aiming to make developers more productive and increase external code quality. When using the Code-First-Test-After approach, the production code is developed first, then tests to verify the code.\\
 [0.0em]
- \textit{Goal:} We aim to investigate the performance impact, and the level of detail. The task description is related to Test-Driven development and the Code-First-Test-Aftter approach.\\
+ \textit{Goal:} We aim to investigate the performance difference between Test-Driven development and Code-First-Test-After approach, and the level of detailed description of requirements. The task description is related to Test-Driven development and the Code-First-Test-Aftter approach.\\
 [0.0em]
- \textit{Method:} We performed an experiment having the students solving four different tasks, where the tasks was to use either Test-Driven development or Code-First-Test-After on a task described with little or high level of detail.\\
+ \textit{Method:} We performed an experiment, having students solving one of four different tasks, where the tasks was to use either Test-Driven development or Code-First-Test-After on a task which requirements were described with little or high level of detail.\\
 [0.0em]
- \textit{Result:} The development approach did not have any significant impact on the performance,  unlike the level of detail in the task description which had a significant impact.\\
+ \textit{Result:} The development approach did not have any significant impact on the performance, unlike the level of detail in the task description which had a significant impact.\\
 [0.0em]
- \textit{Conclusion:} From this experiment we cannot make any generalized conclusion as the test group is not a representative of the target group, but there seem to be no real difference between Test-Driven development and Code-First-Test-After. It seems like the approach was less important than how detailed the task was described.
+ \textit{Conclusion:} From this experiment we can only conclude based on our specific test subjects, as they are not representative for the real target group. The experiment showed that the approach of development, either Test-Driven development or Code-First-Test-After, was less important than how detailed the task were described.
 
 \end{abstract}
 
@@ -129,33 +129,33 @@ Tenna Cortz, Mads Riisom, Henrik Bolding Frank\\
 \printccsdesc
 
 \begin{keywords}
-Test Driven Development, Code First Test After, Performance, Development Approach, Software, Engineering, \newline Experiment
+Test-Driven Development, Code-First-Test-After, Performance, Development Approach, Software, Engineering, \newline Experiment
 \end{keywords}
 
 %We need a source for this CFTA
 \section{Introduction}
-Test-driven development is a software development process where the developer creates the tests first, and then develop the minimum amount of production code to pass the test, then if needed the code is refactored \cite{beck1}. Where Code-First-Test-After works by first implementing the production code needed to fulfil a requirement and then making tests to verify that the requirement is indeed fulfiled. Test-driven development has gained increased interest because of its claim to increase early fault detection, external code quality and productivity \cite{astels1}. These claims have been subject to multiple studies (Section~\ref{sec:Related work}) but so far there are no conlcusive results supporting the claim \cite{shull1}.
+Test-Driven development is a software development process, where the developer creates the tests first, and then develop the minimum amount of production code to pass the test. After which the code is refactored if necessary \cite{beck1}. The Code-First-Test-After approach, works by first implementing the production code needed to fulfil a requirement, and then making tests to verify that the requirement is indeed fulfilled. Test-Driven development has gained increased interest because of its claim to increase early fault detection, external code quality and productivity \cite{astels1}. These claims have been subject to multiple studies (Section~\ref{sec:Related work}) but so far there are no conclusive results supporting the claim \cite{shull1}.
 
-This experiment is based on of experiments done by Fucci et al. \cite{fucci2} and it aims to verify if there is a correlation between Test-Driven development and Test after in relation to the level of detail in the task description. We will use the state of the code as a basis for our analysis to see if the approach relates to the productivity and external quality.
+This experiment is based on experiments done by Fucci et al. \cite{fucci2}, and it aims to verify if there is a correlation between Test-Driven development and Code-First-Test-After in relation to the level of detail in the task description. We will use the state of the submitted codes as a basis for our analysis, to see if the approach relates to the productivity and external quality.
 
-The paper is organized as follows: Section~\ref{sec:Related work} goes through the previous experiments and states our contribution, in section~\ref{sec:Research method} explains the experiment setup, in section~\ref{sec:Results} shows the results and our analysis, in section~\ref{sec:Discussion} the results are discussed and compared to the earlier stated related work, in section~\ref{sec:Threats to validity} the threats to validity is considered and in section~\ref{sec:Conclusion} we present the conclusion. 
+The paper is organized as follows: Section~\ref{sec:Related work} goes through the previous experiments and states our contribution, section~\ref{sec:Research method} explains the experiment setup. In section~\ref{sec:Results} our results and analysis is described, where in section~\ref{sec:Discussion} the results are discussed and compared to the earlier stated related work. In section~\ref{sec:Threats to validity} the threats to validity is considered and in section~\ref{sec:Conclusion} we present the conclusion. 
 
 \section{Related work}
 \label{sec:Related work}
-In this section we will first report the results of a replication study aiming to verify that there is a correlation between Test-Driven development, developer productivity and the external code quality. Following that a study which investigates the relation between the subject's programming and testing capabilities in relation to Test-Driven development.
+In this section we will first state the results of a replication study, aiming to verify that there is a correlation between Test-Driven development, developer productivity and the external code quality. Followed by a study which investigates the relation between the subject's programming and testing capabilities in relation to Test-Driven development.
 
-The first experiment is a replication study performed by Fucci et al. \cite{fucci2} and the experiment investigates the effectiveness of Test-Driven development, and the motivation for replicating the experiment was to verify the model presented in the original study performed by Erdogmus et al. \cite{erdogmus1}. While doing so two new conditions were introduced. This study aimed to see what role tests plays in Test-Driven develpoment in regards to the claimed productivity and external quality increase. The outcome supported the original study showing that the number of tests has a correlation with the productivity, but it also showed that there are hidden factors still to be identified.
+The first experiment, is a replication study performed by Fucci et al. \cite{fucci2} which investigates the effectiveness of Test-Driven development. The motivation for replicating the experiment was to verify the model presented in the original study, performed by Erdogmus et al. \cite{erdogmus1}. This study aimed to see what role tests plays in Test-Driven develpoment in regards to the claimed productivity and external quality increase. The outcome supported the original study, showing that the number of tests, has a correlation with the productivity, but it also showed that there are hidden factors still to be identified.
 
-The second study was also done by Fucci et al. and tested the effects of programming and testing skills, on external quality and productivity in a test-driven development context \cite{fucci1}. Where they aimed to see if there was a correlation between the performance of Test-Driven development and the subjects programming and testing capabilities. The results showed a linear relation between the testing efforts and the external code quality and productivity. It also showed that the developers' programming and unit-testing capabilities had a significant impact on their productivity but not on the externa codel quality.
+The second study was also done by Fucci et al. and tested the effects of programming and testing skills, on external quality and productivity in a test-driven development context \cite{fucci1}. They aimed to see if there was a correlation between the performance of Test-Driven development and the subjects' programming and testing capabilities. The results showed a linear relation between the testing efforts and the external code quality and productivity. It also showed that the developers' programming and unit-testing capabilities had a significant impact on their productivit,y but not on the external code quality.
 
-This  experiment is following op on these experiments and focuses on the performance difference between Test-Driven development, Code-First-Test-Aftter in relation to the level of detail in the task description.
+This  experiment follow op on the mentioned experiments and focuses on the performance difference between Test-Driven development, the Code-First-Test-After approach, in relation to the level of detail in the task description.
 
 \vfill
 \eject
 
 \section{Research method}
 \label{sec:Research method}
-The experiment aimed to investigate the performance difference between the TDD and the CFTA approach, with either step by step instructions (Sliced) or free text (Non-sliced). To investigate this we performed an experiment using third semester Software Engineering bachelor students at SDU as test subjects.
+The experiment aimed to investigate the performance difference between the Test-Driven development and the Code-First-Test-After approach, with either step-by-step instructions (Sliced) or free text (Non-sliced). To investigate this we performed an experiment using third semester Software Engineering bachelor students at SDU as test subjects.
 Before and after the actual experiment was conducted, the students were handed a pre- and a post-questionnaire respectively.
 The pre-questionnaire contained questions regarding the students perception of their own skill level, where the post-questionnaire contained questions about how well the students thought they performed during the experiment.
 % Research question below
@@ -166,29 +166,29 @@ The pre-questionnaire contained questions regarding the students perception of t
 \hspace*{-3.73in}
 	\centering
 	\includegraphics[width=2.13\linewidth]{flow01}
-	\caption{Flowchart of experiment}
-	\label{fig:Flowchart}
+	\caption{Flowchart of experiment, Part 1. Showing the startup phase, and the setup of the experiment phase}
+	\label{fig:Flowchart1}
 \end{figure}
 \clearpage
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=2.13\linewidth]{flow02}
-	\caption{Flowchart of experiment}
-	\label{fig:Flowchart}
+	\caption{Flowchart of experiment, Part 2. Showing the pre-questionnaire and implementation of the experiment phase}
+	\label{fig:Flowchart2}
 \end{figure}
 \clearpage
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=2.13\linewidth]{flow03}
-	\caption{Flowchart of experiment}
-	\label{fig:Flowchart}
+	\caption{Flowchart of experiment, Part 3. Showing the post-questionnaire of the experiment phase, and the data analysis phase}
+	\label{fig:Flowchart3}
 \end{figure}
 
 The actual experiment was based on four tasks, which were distributed randomly among the students, with no know\-ledge to us, which students received which task. This were decided as we have previous knowledge of the students strengths and weaknesses, and could therefore insinuate a biased distribution.
 
-The tasks contained the same information, were the students where to develop an application that could calculate the bow\-ling score of a single game. This software solution, should be implemented without a graphical user interface, and provide a test environment, that tested the requirements of the task. The requirements for the calculations were explained in the task descriptions, where it was expected for the students to use the specified approach.
+The tasks contained the same basic information, where the students were to develop an application that could calculate the bow\-ling score of a single game. The software solution, should be implemented without a graphical user interface, and provide a test environment, that tested the requirements of the task. The requirements for the calculations were explained in the task descriptions, and it was expected for the students to use the coding approach specified in the individual task.
 The tasks that were distributed, are described in Table~\ref{TaskTable}.
 
 \begin{table}[!ht]
@@ -208,13 +208,14 @@ SLTF & Sliced, test-first\\
 \end{tabular}
 \end{table}
 
-The test-last approach tasks were where the students had to implement the requirement, followed by implementing the test, which should ensure the fulfillment of the requirement.
-The test-first approach tasks were where the students had to implement a test to fulfill the requirement, and then implement as little code as possible to satisfy the specific test.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-The sliced tasks, the requirements were described step-by-step, whereas the non-sliced tasks, had requirement descriptions written in a text block.
+The test-last approach tasks, were where the students had to implement the requirement, followed by implementing a test, which should ensure the fulfillment of the requirement.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+The test-first approach tasks, were where the students had to implement a test to fulfill the requirement, and then implement as little amount of production code as possible to satisfy the specific test.
+The sliced tasks, were where the requirements were described step-by-step, whereas the non-sliced tasks, had requirement descriptions written in a text block.
 
-The flowchart \ref{fig:Flowchart} shows how the entire experiment was conducted in three major steps; ``Startup'' which contains our preparation for conducting the experiment, ``Experiment'' that contains the experiment itself, and ``Data analysis'' containing the data analysis after data collection at the end of the experiment.
+The flowcharts shown in Figure~\ref{fig:Flowchart1}-\ref{fig:Flowchart3} shows how the entire experiment was conducted in three major steps; ``Startup'' which contains our preparation for conducting the experiment, ``Experiment'' that contains the experiment itself, and ``Data analysis'' containing the data analysis after data collection at the end of the experiment. In Table~\ref{tab:The flowchart artifacts:}, it is described how to interpret the artifacts in the flowcharts.
 
-While performing the experiment the group participated in a supporting capacity, as well as observers and coordinators. While helping the students with any difficulties during the experiment, the group gained more insights into the different tasks, and the students' approaches to the tasks. These insights could influence the group's objectivity to the experiment process as well as their perception of the results.\begin{table}[!ht]
+While performing the experiment, we participated in a supporting capacity, as well as observers and coordinators. While helping the students with any difficulties during the experiment, the group gained more insights into the different tasks, and the students' approaches to the tasks. These insights could influence our objectivity to the experiment process as well as our perception of the results.\\
+\begin{table}[!ht]
 \centering
 \caption{The flowchart artifacts}
 \label{tab:The flowchart artifacts:}
@@ -223,17 +224,16 @@ While performing the experiment the group participated in a supporting capacity,
 \textbf{Artifact} & \textbf{Description} \\
 \hline
 \hline
-Squared blue boxes & Major activities, describing important actions performed by the group or the test subjects\\
-Squared white boxes & Minor activities/sub activities, describing small action related to the major activity, performed by the group or the test subjects\\
+Squared blue boxes & Major activities, describing important actions performed byus or the test subjects\\
+Squared white boxes & Minor activities/sub activities, describing small action related to the major activity, performed by us or the test subjects\\
 Blue rhombus & Outcome of the activity/activities\\
 \hline
 \end{tabular}
 \end{table}
-\clearpage
 
-As it is seen in the flowchart \ref{fig:Flowchart} we verified the students submissions, by checking if the students submitted their coding solutions to Blackboard, and have answered the pre- and post-questionnaires. If this were done properly we collected their checklists, to see if the students had followed the instruction hereon.
+As it is seen in the flowchart \ref{fig:Flowchart3} we verified the students submissions, by checking if the students submitted their coding solutions to Blackboard, and have answered the pre- and post-questionnaires. If this were done properly we collected their checklists, to see if the students had followed the instruction hereon.\\\\\\\\
 
-In the experiment, the students received a code skeleton to work from, to ensure that the solutions had a similar structure, and therefore would be easier to compare. The submitted solutions were evaluated using an ordinal scale, from where it were decided whether the student was in one of the following three states; failed, critical and passed. These are described in Table~\ref{StatesTable}.
+In the experiment, the students received a code skeleton to work from, to ensure that the solutions had a similar structure, and therefore would be easier to compare. The submitted solutions were evaluated using an ordinal scale, from where it were decided whether the individual student was in one of the following three states; failed, critical and passed. These are described in Table~\ref{StatesTable}.
 
 \begin{table}[!ht]
 \centering
@@ -246,14 +246,14 @@ In the experiment, the students received a code skeleton to work from, to ensure
 \hline
 Failed state & Solutions that has no chance to run in a centralized environment \\
 Critical state & Solutions that has a high probability to run \\
-Passed state & Solutions (partially) fulfilling the requirement \\
+Passed state & Solutions (partially) fulfilling the requirements \\
 \hline
 \end{tabular}
 \end{table}
 
-Afterwards the solutions' states and questionnaires were analyzed to see if there was a correlation between the test-first or test-after approach, and the task description's granularity.
+Afterwards the solutions' states and questionnaires were analyzed to see if there was a correlation between the test-first or test-last approach, and the task description's level of detail.
 
-As described, our last step of the experiment, was to ana\-lyze the experiment data. This was done by finding the deviation of the tasks distributed to the students. Hereafter, we found how the states were distributed in within each task, and calculated the weighted normalized data, with weights of on the states; Passed=1, Critical=0.5 and Failed=0.01. The failed weight was set to 0.01 to ensure calculations without multiplying with 0, which would give wrong results.
+As described, our last step of the experiment, was to ana\-lyze the data obtained from the experiment. This was done by finding the deviation of the tasks, distributed to the students. Hereafter, we found how the states were distributed within each task, and calculated the weighted normalized data, with weights of the states; Passed=1, Critical=0.5 and Failed=0.01. The failed weight was set to 0.01 to ensure calculations without multiplying with 0, which would give wrong results.
 The formula and equation is represented in equation~(\ref{eq1}).
 
 \begin{equation}\label{eq1}
@@ -264,29 +264,28 @@ The formula and equation is represented in equation~(\ref{eq1}).
 \end{split}
 \end{equation}
 
-In the above equation ``Perf'' stands for Performance, ``P" for Passed state, ``C" for critical state and ``F" for failed state. 
+In the equation~(\ref{eq1}) ``Perf'' stands for Performance, ``P" for Passed state, ``C" for critical state and ``F" for failed state. 
 The results of the calculations can be seen in Section~\ref{DataAnalysis}
 
 \section{Results}
 \label{sec:Results}
-In this section, the collected results of the experiment are presented. Data from questionnaires were automatically collected by Google, as they were fulfilled in a ``Google Forms" document. Code submitted by the subjects, has been analyzed and graded.
+In this section, the collected results of the experiment are presented. Data from questionnaires were automatically collected by Google, as they were completed in a ``Google Forms" document. The code submitted by the students, has been evaluated and divided into states, from where they can ba analyzed.
 
 \subsection{Study Population}
 \label{DemograpichInformation}
-The dataset the experiment is based on, consists of 65 data points, from where three data points were rejected as they did not fulfill the requirements of the questionnaires, in other words they were either double or incomplete submission. Therefore, only 62 data points are represented in the following section.
+The dataset, the experiment analysis is based on, consists of 65 data points, from where three data points were rejected as they did not fulfill the requirements of the questionnaires. In other words they were either double or incomplete submissions. Therefore, only 62 data points are represented in the analysis.
 
-All the subjects had submitted a zip-file containing their solution based on the code skeleton provided for the experiment. The three states the submissions were categorized in, were evaluated as if it was a real exam submission.
-The states were divided as seen in Figure~\ref{fig:DistributionOfStudentPerformance}.
+All the subjects had submitted a zip-file containing their solution based on the code skeleton provided for the experiment. The three states the submissions were categorized into, were evaluated as if it was a real exam submission.
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{img01}
-	\caption{Distribution of student's performance}
+	\caption{Distribution of student's submissions divided in the three states}
 	\label{fig:DistributionOfStudentPerformance}
 \end{figure}
-Figure~\ref{fig:DistributionOfStudentPerformance} represents the distribution of student's performance in the experiment, where the evaluation of their submitted code were divided into the three states.\\
+Figure~\ref{fig:DistributionOfStudentPerformance} represents the distribution of students divided in the three states in the experiment, based on their submitted code solutions.\\
 
-As the distribution of the tasks were random, and each student got exactly one task. The number of students receiving the individual tasks were distributed as illustrated in Figure~\ref{fig:TaskDistributions}:
+As the distribution of the tasks were random, and each student got exactly one task, the number of students receiving the individual tasks were distributed as illustrated in Figure~\ref{fig:TaskDistributions}:
 
 \begin{figure}[!ht]
 	\centering
@@ -295,9 +294,9 @@ As the distribution of the tasks were random, and each student got exactly one t
 	\label{fig:TaskDistributions}
 \end{figure}
 
-38 students used the test-last approach, and 24 students used the test-first approach. Further it is an exceptional case where both the sliced and non-sliced tasks were equally distributed with 31 of each.
+We notice that 38 students should have used the test-last approach, and 24 students should have used the test-first approach. Further it is an exceptional case, as both the sliced and non-sliced tasks were equally distributed with 31 of each, when using random distribution among the students.
 
-After the assessment of the code submissions, it is possible to look at the answers of the questionnaires. Shown in Figure~\ref{fig:Student's own experience rating} the student's perception of their own programming experience in these fields; General programming, C{\#}, Visual Studio, Unit testing, NUnit testing framework and Test-driven development (TDD).
+After the assessment of the code submissions, it is possible to look at the answers of the questionnaires. Shown in Figure~\ref{fig:Student's own experience rating} is the student's perception of their own programming experience in these fields; General programming, C{\#}, Visual Studio, Unit testing, NUnit testing framework and Test-driven development (TDD).
 The students were rating their experience on the scale: None, Novice, Intermediate and Expert.
 
 \begin{figure}[!ht]
@@ -307,11 +306,12 @@ The students were rating their experience on the scale: None, Novice, Intermedia
 	\label{fig:Student's own experience rating}
 \end{figure}
 
-Here it is seen that the students who ended up with TF tasks rated themselves lower in their perception of their experience in TTD.
+In Figure~\ref{fig:TDD experience in tasks} it is seen that the students who ended up with test-first tasks rated themselves lower in their perception of their experience in Test-Driven development.
 
+%Nedenstående billede er FORKERT!!! Det skal være et stående søjlediagram og ikke liggende...
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=1\linewidth]{img04}
+	\includegraphics[width=1\linewidth]{image04}
 	\caption{TDD experience in tasks}
 	\label{fig:TDD experience in tasks}
 \end{figure}
@@ -320,7 +320,7 @@ When looking at Figure~\ref{fig:Student's own experience rating} and Figure~\ref
 
 \subsection{Data Analysis}
 \label{DataAnalysis}
-As the experiment aimed to investigate the performance based on the four tasks distributed amongst the students, Figure~\ref{fig:Student's task performance} shows the code states divided by the tasks.
+As the experiment aimed to investigate the performance based on the four tasks distributed amongst the students, Figure~\ref{fig:Student's task performance} shows the code states divided in each task.
 
 \begin{figure}[!ht]
 	\centering
@@ -329,10 +329,10 @@ As the experiment aimed to investigate the performance based on the four tasks d
 	\label{fig:Student's task performance}
 \end{figure}
 
-As it is stated in Figure~\ref{fig:Student's task performance}, there are a tendency for the students' submissions to pass with sliced tasks.
+As it is seen in Figure~\ref{fig:Student's task performance}, there are a bigger tendency for the students' submissions to pass with sliced tasks.
 
-Figure~\ref{fig:SLTL percentage distributions with relative task numbers} shows the distributions between the students self-rating of programming experience level (None, Novice, Intermediate, Expert), and their correlating submission state (Passed, Critical, Failed), divided into each of the tasks respectively.
-It is important to notice that there were no students who have rated their programming experience  as ``None" which means that they could have excluded this in Figure~\ref{fig:SLTL percentage distributions with relative task numbers}-\ref{fig:NSTF percentage distributions with relative task numbers}. These are however included in the diagrams as it was an option in the pre-questionnaire, and therefore if excluded, could give a skewed view of the students programming experience levels. This does also apply for the ``Expert" ratings which is described show in Figure~\ref{fig:SLTL percentage distributions with relative task numbers}.
+Figure~\ref{fig:SLTL percentage distributions with relative task numbers}-\ref{fig:NSTF percentage distributions with relative task numbers} shows the distributions between the students self-rating of programming experience level (``None", ``Novice", ``Intermediate", ``Expert"), and their correlating submission state (Passed, Critical, Failed), divided into each of the tasks respectively.
+It is important to notice that there were no students who have rated their programming experience  as ``None" which means that we could have excluded. These are however included in the diagrams as it was an option in the pre-questionnaire, and therefore if excluded, could give a skewed view of the students programming experience levels. This does also apply for the ``Expert" ratings which is only shown in Figure~\ref{fig:SLTL percentage distributions with relative task numbers}.
 
 \begin{figure}[!ht]
 	\centering
@@ -341,7 +341,8 @@ It is important to notice that there were no students who have rated their progr
 	\label{fig:SLTL percentage distributions with relative task numbers}
 \end{figure}
 
-Here it is seen that 100\% of all students who rated their programming experience to be ``Expert" has submitted a solution that fulfilled the requirements satisfying, where it was only 70\% and 20\% in respectively "Intermediate" and ``Novice".
+Figure \ref{fig:SLTL percentage distributions with relative task numbers} shows the distribution of states and experience level in the SLTL task.
+Here it is seen that 100\% of all students who rated their programming experience to be ``Expert" has submitted a solution that fulfilled the requirements satisfying, where it was only 70\% and 20\% in respectively ``Intermediate" and ``Novice".
 It is important to notice that there were only one student who rated him- or herself as an ``Expert" in programming experience, which means that he could have been excluded from the statistical analysis of this task, as the ``Expert" percentage are misleading the reader. The rest of the percentages are for the critical submissions 10\% and 30\%, and for the failed submissions 20\% and 50\% respectively for the ``Intermediate" and the ``Novice" students.
 
 \begin{figure}[!ht]
@@ -351,7 +352,7 @@ It is important to notice that there were only one student who rated him- or her
 	\label{fig:SLTF percentage distributions with relative task numbers}
 \end{figure}
 
-In Figure~\ref{fig:SLTF percentage distributions with relative task numbers} it is seen that only 50\% of the ``Inter\-mediate" students submitted solutions which fulfilled the requirements satisfying, where there are none ``Novice" students who did. On the other hand it is seen that it is respectively 12.5\% and 50\% in the ``Intermediate" and ``Novice" who were in the Critical state. The last percentages are 37.5\% and 50\% for respectively the ``Intermediate" and the ``Novice" students are those who failed.
+In Figure~\ref{fig:SLTF percentage distributions with relative task numbers} it is seen that 50\% of the ``Intermediate" students submitted solutions which fulfilled the requirements satisfying, where there are none ``Novice" students who did. This is visualizes for the SLTF tasks. On the other hand it is seen that it is respectively 12.5\% and 50\% in the ``Intermediate" and ``Novice" who were in the Critical state. The last percentages of 37.5\% and 50\% for respectively the ``Intermediate" and the ``Novice" students are for the students who were in the Failed state.
 
 \begin{figure}[!ht]
 	\centering
@@ -360,7 +361,7 @@ In Figure~\ref{fig:SLTF percentage distributions with relative task numbers} it 
 	\label{fig:NSTL percentage distributions with relative task numbers}
 \end{figure}
 
-Figure~\ref{fig:NSTL percentage distributions with relative task numbers} shows the distribution of the students' ex\-perience and states of the NSTL tasks. Here it is also seen that it is only the students who have rated themselves as ``Inter\-mediate" experienced in programming, who submitted solutions that fulfilled the requirements with 62.5\%. This means that the ``Novice" students had a distribution, with 44.5\% critical and 55.5\% failed submissions. Whereas the ``Inter\-mediate" students had 25\% critical and 12.5\% failed solution submissions.
+Figure~\ref{fig:NSTL percentage distributions with relative task numbers} shows the distribution of the students' experience level and states of the NSTL tasks. Here it is also seen that it is only the students who have rated themselves as ``Inter\-mediate" experienced in programming, who submitted solutions that fulfilled the requirements, this is with 62.5\%. This means that the ``Novice" students had a distribution, with 44.5\% Critical and 55.5\% Failed submissions. Whereas the ``Inter\-mediate" students had 25\% critical and 12.5\% failed solution submissions.
 
 \begin{figure}[!ht]
 	\centering
@@ -369,9 +370,9 @@ Figure~\ref{fig:NSTL percentage distributions with relative task numbers} shows 
 	\label{fig:NSTF percentage distributions with relative task numbers}
 \end{figure}
 
-Figure~\ref{fig:NSTF percentage distributions with relative task numbers} shows the distribution of the student's experience and states of the NSTF tasks. Here it is seen that both the ``Intermediate" and the ``Novice" students have submitted solutions that fulfilled the requirements, with a distribution of 20\% and 50\% respectively. Further the critical is distributed 30\% and 25\% where the failed is distributed 50\% and 25\% respectively for the ``Intermediate" and the ``Novice" students.
+Figure~\ref{fig:NSTF percentage distributions with relative task numbers} shows the distribution of the student's experience level and states of the NSTF tasks. Here it is seen that both the ``Intermediate" and the ``Novice" students have submitted solutions that fulfilled the requirements, with a distribution of 20\% and 50\% respectively. Further the Critical is distributed 30\% and 25\%, where the Failed is distributed 50\% and 25\% respectively for the ``Intermediate" and the ``Novice" students.
 
-Figure~\ref{fig:Total normalized data distributed in tasks} is a visualization of the total normalized data divided into the four different tasks. These data is calculated based on the weights: Passed=1, critical=0.5, failed=0.01. %beskriv beskriv beskriv!n
+Figure~\ref{fig:Total normalized data distributed in tasks} is a visualization of the total normalized data divided into the four different tasks. These data is calculated based on the weights: Passed=1, critical=0.5, failed=0.01. This is also described in Section~\ref{sec:Research method}.
 
 \begin{figure}[!ht]
 	\centering
@@ -382,7 +383,7 @@ Figure~\ref{fig:Total normalized data distributed in tasks} is a visualization o
 
 It is seen that the students who had the sliced tasks performed better than the students who had the non-sliced tasks.
 
-Figure~\ref{fig:Novice normalized data distributed in tasks in accordance to total normalized data} shows ``Novice" and ``Intermediate" normalized data respectively, in accordance to the total normalized data.
+Figure~\ref{fig:Novice normalized data distributed in tasks in accordance to total normalized data}-\ref{fig:Intermediate normalized data ditsributed in tasks in accordance to total normalized data} shows ``Novice" and ``Intermediate" normalized data respectively, in accordance to the total normalized data.
 
 \begin{figure}[!ht]
 	\centering
@@ -400,20 +401,22 @@ In Figure~\ref{fig:Novice normalized data distributed in tasks in accordance to 
 	\label{fig:Intermediate normalized data ditsributed in tasks in accordance to total normalized data}
 \end{figure}
 
-Figure~\ref{fig:Intermediate normalized data ditsributed in tasks in accordance to total normalized data} shows that the ``Intermediate" normalized data is higher than the total in all tasks but in the NSTL. Which suggest that people who rates their programming experience at ``Intermediate" is more predisposed to do worse when given the NSTL tasks in comparison if given one of the other tasks.
+Figure~\ref{fig:Intermediate normalized data ditsributed in tasks in accordance to total normalized data} shows on the other hand that the ``Intermediate" normalized data is higher than the total in all tasks but in the NSTL task. Which suggest that people who rate their programming experience as ``Intermediate" is more predisposed to do worse when given the NSTL task in comparison if given one of the other tasks.
 
 
 \section{Discussion}
 \label{sec:Discussion}
-In this section we compare test-driven development and Code First Test After according to our results. The result doesn't give any clear answer to what is best, but the results indicate that for the students as novice developers it was easier to use the code first approach, which could be because they didn't know how to solve the problem at first, but used trial and error to solve small parts of the assignment step by step to find a solution that seemed to cover the requirements. When the developer does not know how the code will be structured in the end it is difficult to write tests that will cover everything.
+In this section we compare Test-Driven development and Code-First-Test-After according to our results.
 
-This has to be compared to the more experienced developers, who knew how they were going to solve the assignment from the requirements. Which allowed them to write the tests according to their initial solution and then use the tests to identify issues they might run into when implementing the logic later on.
+For our specific test subjects, being the third semester students, we see that there are a tendency for ``Novice" programmers to do well in the NSTL task, whereas the ``Intermediate" programmers do well in all others tasks than exactly the NSTL task. This is only applicable for our experiment, as the ``real target group" is real developers who have more than a few years of programming experience.
 
-But as all of the students are new to programming these are only assumptions, and we have to do more research to find a clear answer, as the results will most likely be different with a group of more experienced developers.
+For the students in general, not taking their self-rating experience level into account, have a tendency to perform better, when given sliced tasks. This could be due to their inexperience in reading and understanding requirement descriptions. But it could also have been due to the students' programming experience level, which could have prevented them in implementing their solutions.
 
-For the next iteration of this experiment it is paramount that the students are more clearly instructed in what the assignment is, to ensure that they are more focused on performing the experiment in accordance to description, as the validity of the results become questionable when the students differ from the described pattern of the experiment. 
+Our data analysis can be discussed as, besides one student, all students rated their programming experience level as either ``Novice" or ``Intermediate". This could have influenced our results as the data is more uniform than first expected. As the experiment was conducted during a mandatory lecture, the students maybe did not wanted to rate themselves either too high or too low.
 
-To ensure that there was no bias in the assignment of tasks the students received tasks randomly, this has the benefit that we as a group were unable to bias the results by handing out the assignments to the students in a way that would increase the probability of favourable result. The downside to this approach is that there was an unequal distribution of students across the different tasks, but with a sample group of this size it was not an issue.
+If we were to conduct this experiment again on a new group of test subjects, we would be more aware of how the students reacted to the individual tasks. Further we would work more constructive to prepare both the students and their computers in a way that they would have been applicable for the experiment. 
+
+To ensure that there was no bias in the assignment of the tasks to the students, the tasks were randomly distributed among the students. The benefit of this approach is that we were unable to bias the results by handing out the tasks to the students in a way that would increase the probability of favorable result. The downside to this approach is that there was an unequal distribution of tasks across the students.
 
 As mentioned earlier, the original study concluded a linear relation between testing effort and the two outcomes of external code quality and productivity, but as the second study was executed, the conclusion and results was contracted. As this experiment neither shows any relation between testing effort, and the two outcomes of external code quality and productivity, this experiments supports the latest experiment by D. Fucci, B. Turhan and M. Oivo very well. The only matter of concern is whether the test subject in our experiment, is representative to the target group or not, which we must assume the test subjects, used in the experiment by D. Fucci, B. Turhan and M. Oivo is. This matter of concern defines whether our data can support their data or not.
 
@@ -424,21 +427,22 @@ In this section we will go over the threats to validity using the guidelines by 
 
 The threats to the Internal validity of this experiment are mostly related to the selection process. The experiment was conducted while the students were performing a test, which would indicate that they were highly motivated to perform well.
 
-Further External threats to the validity were amongst others the \textit{Interaction of setting and treatment}, as the test subjects were given small simple tasks to complete, which does not represent a real world setting the results from an experiment in the field might vary. \textit{Interaction of history and treatment} is an important factor as the subjects had received lectures in all the topics tested in the experiment a few weeks up to the experiment. The participants were not representative of the target group (Software Developers) which also had an effect on the results, as they were unable to perform at the same level as the level as the target group.
+The threats to the External validity were amongst others the \textit{Interaction of setting and treatment}, as the test subjects were given small simple tasks to complete, which does not represent a real world setting, as results from an experiment in the field might vary. \textit{Interaction of history and treatment} is an important factor as the subjects had received lectures in all of the topics tested in the experiment a few weeks up to the experiment. The students were not representative of the target group (Software Developers) which also had an effect on the results, as they were unable to perform at the same level as the level as the target group.
 
-One of the major Social threats was that the students talked about the tasks during the experiment, which was not intended, as this could hamper their individual performance. Another threat to the Social validity comes from the human discomfort from being evaluated\cite{henchy1}, which can have influenced the results. The main \textit{Hypothesis guessing} threat comes from the students recieving five  weeks of TDD lectures just prior to the experiment, this might have impacted the subjects answers more in favor of TDD in the pre- and post questionnaires as they expected us to want them to be in favour of TDD. 
+One of the major Social threats to validity was that the students talked about the tasks during the experiment, which was not intended, as this could influence their individual performance. Another threat to the Social validity comes from the human discomfort from being evaluated\cite{henchy1}, which can have influenced the results. The main \textit{Hypothesis guessing} threat comes from the students recieving five  weeks of Test-Driven development lectures just prior to the experiment, this might have impacted the subjects answers more in favor of TDD in the pre- and post-questionnaires as they expected us to want them to be in favour of Test-Driven development. 
 
-The results might also have been affected by the student's not having the proper prerequisites ready before the experiment, and therefore spent some of the experiment time on preparing their system. This might have had an impact on how much of the assignment they completed, but as stated in the experiment kit, they were not scores on how much of the assignment they handed in, it was focused on how well the handed in code worked as well as how well tested it was.
+The results might also have been affected by the student's not having the proper prerequisites ready before the experiment, and therefore spent some of the experiment time on preparing their systems. This might have had an impact on how much of the assignment they completed, but as stated in the experiment-kit, they were not scores on how much of the experiment they submitted. The submission focused on how well the code worked as well as how well tested it was.
 
-The principal Conclusion validity is affected by the \textit{heterogeneity of the subjects} was rather large, as the test subjects was still only in the start of their university education, so their previously programming ability still played a major role in their programming proficiency which is also concerning the External validity. Also we do not claim that the results can be generalized for the entire software developer population, as these students were having difficulties solving the basic programming task they had to hand in. 
+The principal Conclusion validity is affected by the \textit{heterogeneity of the subjects}, as it was rather large. This is due to the fact that the test subjects was still only in the start of their university education, so their previously programming ability still played a major role in their programming proficiency, which also concerns the External validity. 
 
 \section{Conclusion}
 \label{sec:Conclusion}
-In this study we performed an experiment to investigate if there was an increase in productivity when using TDD instead of CFTA. The test subjects were not representative of the target group of software developers so these findings only reflect how TDD and CFTA compare when used by students. The experiment showed that with this test group the approach was less important than how detailed the task was described.
-
-But the experiment indicates that for students considering themselves as Novices making the tests first yielded worse results than Test Last. The students considering themselves as intermediate the Test first seemed to yield the best results. But these results has to be tested further to make any generalized conclusion as there is no clear trend in the results.
+In this study we performed an experiment to investigate if there was an increase in productivity when using Test-Driven development instead of Code-First-TestAfter. The test subjects were not representative of the target group of software developers so these findings only reflect how TDD and CFTA compare when used by students. The experiment showed that with this test group the approach was less important than how detailed the task was described.
 
 In the future we would like to perform a similar test on a group which has a closer relation to the actual target group. We would also investigate if it would be possible to use a metric to determine a subject's programming proficiency objectively instead of using the user's opinion. This will hopefully lead to a more general conclusion regarding the performance differences regarding TDD and CFTA.
+
+The experiment indicates that for students considering themselves as ``Novices" using the tests-first yielded worse results than test-last. The students considering themselves as ``Intermediate" the test-first seemed to yield the best results. But these results has to be tested further to make any generalized conclusion.
+
 
 \bibliographystyle{abbrv}
 \bibliography{sigproc}
