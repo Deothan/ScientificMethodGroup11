@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSK", "BSK\BSK.csproj", "{6A05C976-F9B3-451B-844B-D75F04E7888E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBSK", "TestBSK\TestBSK.csproj", "{5D59FD44-E11E-4824-9B7F-436C957947EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A05C976-F9B3-451B-844B-D75F04E7888E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A05C976-F9B3-451B-844B-D75F04E7888E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A05C976-F9B3-451B-844B-D75F04E7888E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A05C976-F9B3-451B-844B-D75F04E7888E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D59FD44-E11E-4824-9B7F-436C957947EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D59FD44-E11E-4824-9B7F-436C957947EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D59FD44-E11E-4824-9B7F-436C957947EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D59FD44-E11E-4824-9B7F-436C957947EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

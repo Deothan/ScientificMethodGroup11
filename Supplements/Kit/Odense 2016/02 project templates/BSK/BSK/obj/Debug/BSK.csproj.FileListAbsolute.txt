@@ -1,0 +1,8 @@
+\\Mac\Home\Desktop\ass03\BSK\BSK\bin\Debug\BSK.exe.config
+\\Mac\Home\Desktop\ass03\BSK\BSK\bin\Debug\BSK.exe
+\\Mac\Home\Desktop\ass03\BSK\BSK\bin\Debug\BSK.pdb
+\\Mac\Home\Desktop\ass03\BSK\BSK\obj\Debug\BSK.exe
+\\Mac\Home\Desktop\ass03\BSK\BSK\obj\Debug\BSK.pdb
+\\Mac\Home\Desktop\BSK\BSK\bin\Debug\BSK.exe.config
+\\Mac\Home\Desktop\BSK\BSK\obj\Debug\BSK.exe
+\\Mac\Home\Desktop\BSK\BSK\obj\Debug\BSK.pdb

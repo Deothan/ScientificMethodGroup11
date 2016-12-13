@@ -132,17 +132,16 @@ Tenna Cortz, Mads Riisom, Henrik Bolding Frank\\
 Test-Driven Development, Code-First-Test-After, Performance, Development Approach, Software, Engineering, \newline Experiment
 \end{keywords}
 
-%We need a source for this CFTA
 \section{Introduction}
 Test-Driven development is a software development process, where the developer creates the tests first, and then develops the minimum amount of production code needed to pass the test. After which the code is refactored if necessary \cite{beck1}. The Code-First-Test-After approach, works by first implementing the production code needed to fulfil a requirement, and then making tests to verify that the requirement is indeed fulfilled. Test-Driven development has gained increased interest because of its claim to increase early fault detection, external code quality and productivity \cite{astels1}. These claims have been subject to multiple studies (See Section~\ref{sec:Related work}) but so far there are no conclusive results supporting the claim \cite{shull1}.
 
-This experiment is based on a group of experiments done by Fucci et al. \cite{fucci2}, and this experiment aims to verify if there is a correlation between Test-Driven development and Code-First-Test-After in relation to the level of detail in the task description. We will use the state of the submitted codes as a basis for our analysis, to see if the approach relates to the productivity and external quality.
+This experiment is based on a group of experiments done by Fucci et al. \cite{fucci2}, and this experiment aims to verify if there is a correlation between Test-Driven development and Code-First-Test-After in relation to the level of detail in the task description. We use the state of the submitted codes as a basis for our analysis, to see if the approach relates to the productivity and external quality.
 
 The paper is organized as follows: Section~\ref{sec:Related work} goes through the previous experiments and states our contribution, section~\ref{sec:Research method} explains the experiment setup. In section~\ref{sec:Results} our results and analysis is described, where in section~\ref{sec:Discussion} the results are discussed and compared to the earlier stated related work. In section~\ref{sec:Threats to validity} the threats to validity is considered and in section~\ref{sec:Conclusion} we present the conclusion. 
 
 \section{Related work}
 \label{sec:Related work}
-In this section we will first state the results of a replication study, aiming to verify that there is a correlation between Test-Driven development, developer productivity and the external code quality. Followed by a study which investigates the relation between the subject's programming and testing capabilities in relation to Test-Driven development.
+In this section we present the first state the results of a replication study, aiming to verify that there is a correlation between Test-Driven development, developer productivity and the external code quality. Followed by a study which investigates the relation between the subject's programming and testing capabilities in relation to Test-Driven development.
 
 The first experiment, is a replication study performed by Fucci et al. \cite{fucci2} which investigates the effectiveness of Test-Driven development. The motivation for replicating the experiment was to verify the model presented in the original study, performed by Erdogmus et al. \cite{erdogmus1}. This study aimed to see what role tests plays in Test-Driven develpoment in regards to the claimed productivity and external quality increase. The outcome supported the original study, showing that the number of tests, has a correlation with the productivity, but it also showed that there are hidden factors still to be identified.
 
@@ -197,10 +196,10 @@ The tasks that were distributed, are described in Table~\ref{TaskTable}.
 \textbf{Task code} & \textbf{Description} \\
 \hline
 \hline
-NSTL & Non-sliced, test-last \\
-SLTL & Sliced, test-last \\
 NSTF & Non-sliced, test-first \\
+NSTL & Non-sliced, test-last \\
 SLTF & Sliced, test-first\\
+SLTL & Sliced, test-last \\
 \hline
 \end{tabular}
 \end{table}
@@ -216,14 +215,14 @@ While performing the experiment, we participated in a supporting capacity, as we
 \centering
 \caption{The flowchart artifacts}
 \label{tab:The flowchart artifacts:}
-\begin{tabular}{|l|p{0.56\linewidth}|}
+\begin{tabular}{|p{0.23\linewidth}|p{0.67\linewidth}|}
 \hline
 \textbf{Artifact} & \textbf{Description} \\
 \hline
 \hline
-Squared blue boxes & Major activities, describing important actions performed by us or the test subjects\\
-Squared white boxes & Minor activities/sub activities, describing small action related to the major activity, performed by us or the test subjects\\
-Blue rhombus & Outcome of the activity/activities\\
+Squared blue boxes & \textbf{Major activities}, describing important actions performed by us or the test subjects\\
+Squared white boxes & \textbf{Minor activities/sub activities}, describing small action related to the major activity, performed by us or the test subjects\\
+Blue rhombus & \textbf{Outcome} of the activity/activities\\
 \hline
 \end{tabular}
 \end{table}
@@ -305,7 +304,6 @@ The students were rating their experience on the scale: None, Novice, Intermedia
 
 In Figure~\ref{fig:TDD experience in tasks} one can see that the students who ended up with test-first tasks rated themselves lower in their perception of their experience in Test-Driven development.
 
-%Nedenstående billede er FORKERT!!! Det skal være et stående søjlediagram og ikke liggende...
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=1\linewidth]{img04}
@@ -405,7 +403,7 @@ Figure~\ref{fig:Intermediate normalized data ditsributed in tasks in accordance 
 \label{sec:Discussion}
 In this section we compare our results to the results of the experiments done by Fucci et al. We found that our results correspond well with theirs showing that the more experienced programmers were more productive, which can be seen by the state of the submitted code generally being better for the ``Intermediate" programmers than the  ``Novice" programmers.
 
-The original study conducted by Fucci et al. found a linear relation between the number of tests and external code quality and productivity~\cite{fucci2}, and the second study found that programming and testing experience mostly effects the productivity~\cite{fucci1}. This study did not focus on the number of tests inmplemented, but on the state of the solution as a whole. This change was necessasry because of the inexperience of the test subjects, which made it unlikely that they would be able to implement all of the requirements in the given time frame.
+The original study conducted by Fucci et al.~\cite{fucci2} found a linear relation between the number of tests and external code quality and productivity, and the second study found that programming and testing experience mostly effects the productivity~\cite{fucci1}. This study did not focus on the number of tests inmplemented, but on the state of the solution as a whole. This change was necessasry because of the inexperience of the test subjects, which made it unlikely that they would be able to implement all of the requirements in the given time frame.
 
 To ensure that there was no bias in the assignment of the tasks to the students, the tasks were randomly distributed among the students. The benefit of this approach is that we were unable to bias the results by handing out the tasks to the students in a way that would increase the probability of favorable result. The downside to this approach is that there was an unequal distribution of tasks across the students.
 
@@ -415,7 +413,7 @@ For the students in general, not taking their self-rating experience level into 
 
 \section{Threats to validity}
 \label{sec:Threats to validity}
-In this section we will go over the threats to validity using the guidelines by Wohlin et al.~\cite{wohlin1}.
+In this section we present the threats to validity using the guidelines by Wohlin et al.~\cite{wohlin1}.
 
 The threats to the Internal validity of this experiment are mostly related to the selection process. The experiment was conducted while the students were performing a test, which could lead to them being more motivated to perform well than in a more neutral setting.
 

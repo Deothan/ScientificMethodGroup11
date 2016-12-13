@@ -1,0 +1,9 @@
+\\Mac\Home\Desktop\ass03\BSK\TestBSK\bin\Debug\TestBSK.dll
+\\Mac\Home\Desktop\ass03\BSK\TestBSK\bin\Debug\TestBSK.pdb
+\\Mac\Home\Desktop\ass03\BSK\TestBSK\bin\Debug\BSK.exe
+\\Mac\Home\Desktop\ass03\BSK\TestBSK\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+\\Mac\Home\Desktop\ass03\BSK\TestBSK\bin\Debug\BSK.pdb
+\\Mac\Home\Desktop\ass03\BSK\TestBSK\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+\\Mac\Home\Desktop\ass03\BSK\TestBSK\obj\Debug\TestBSK.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\ass03\BSK\TestBSK\obj\Debug\TestBSK.dll
+\\Mac\Home\Desktop\ass03\BSK\TestBSK\obj\Debug\TestBSK.pdb
